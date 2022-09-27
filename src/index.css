@@ -73,3 +73,15 @@ code {
   margin-top: 50px;
   font-family: 'Parisienne';
 }
+.main {
+  height: 100vh
+}
+.products {
+  height: 100vh
+}
+.about-us {
+  height: 100vh;
+}
+.contact {
+  height: 100vh;
+}
