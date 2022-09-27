@@ -6,7 +6,7 @@ function App() {
     
     <div className="testBox">
       <div className="logo-placeholder">
-      {<img src={edesm_logo} className="sample-image"></img>}
+      {<img src={edesm_logo} className="sample-image"></img>}asdf
       </div>
     </div>
     </>
