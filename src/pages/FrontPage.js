@@ -8,6 +8,7 @@ export function FrontPage() {
     return (
         <>
             <NavBar />
+            
             <Main />
             <Products />
             <AboutUs />

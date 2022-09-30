@@ -14,7 +14,6 @@ import { FrontPage } from "./pages/FrontPage";
 function App() {
   return (
     <>
-      {/* <NavBar /> */}
       {/* <Main />
       <Products />
       <AboutUs />
