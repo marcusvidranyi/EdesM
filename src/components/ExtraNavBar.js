@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 export function ExtraNavBar() {
     return(
         <>
         <nav>
             <ul>
-                <li><Link to="/" >Back</Link></li>
-                {/* <li><Link to="/" >Products</Link></li>
-                <li><Link to="/" >Rólunk</Link></li>
-                <li><Link to="/" >Elérhetőség</Link></li> */}
+                <li><HashLink to="/">Main</HashLink></li>
+                <li><HashLink to="/#products">Products</HashLink></li>
+                <li><HashLink to="/#aboutus">Rólunk</HashLink></li>
+                <li><HashLink to="/#contact">Elérhetőség</HashLink></li>
             </ul>
         </nav>
         </>

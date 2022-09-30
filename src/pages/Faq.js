@@ -1,5 +1,6 @@
 
 import { ExtraNavBar } from "../components/ExtraNavBar"
+
 export function Faq() {
 
     return (

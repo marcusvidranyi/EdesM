@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+}
+
+.navbar-items {
+    margin: 5px;
+}
