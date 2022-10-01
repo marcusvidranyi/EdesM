@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    background-color: black;
+    padding: 10%;
+    
+}
+.productcard {
+    width: 300px;
+    flex: 0 0 calc(25% - 40px);
+    /* max-width: 100px;
+    height: 70px; */
+    color: white;
+    border: 1px solid #A8894A;
+    background-color: black;
+    
+     
+    margin: 1rem;
+}
+.productcard:hover{
+    color:#A8894A;
+}
+.products_container {
+    background-color: black;
+    color: white;
+}
+.between_main_and_products_container {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}

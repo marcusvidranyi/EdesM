@@ -4,7 +4,11 @@ import { Products } from "./Products";
 import { AboutUs } from "./AboutUs";
 import { Contact } from "./Contact";
 
+
 export function FrontPage() {
+
+    
+    
     return (
         <>
             <NavBar />
