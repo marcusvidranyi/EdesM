@@ -14,9 +14,35 @@
     left: 0;
     top: 0;
     width: 100%;
-    
+
 }
 
 .navbar-items {
+    margin: 5px;
+}
+
+.navbar-items a:hover {
+    border-bottom: 3px solid yellow;
+}
+.extra-navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+}
+.extra-navbar a:visited, .extra-navbar a:link {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.extra-navbar-items a:hover {
+    border-bottom: 3px solid yellow;
+}
+
+.extra-navbar-items {
     margin: 5px;
 }
