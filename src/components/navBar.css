@@ -5,20 +5,19 @@
     font-family:'Helvetica Neue', sans-serif
 
 }
-.navbar {
+.navbar, .extra-navbar {
     display: flex;
     list-style: none;
     justify-content: center;
     color: #FFFF;
     position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
     font-size: 130%;
     z-index: 1;
+    transition: all .3s linear;
 }
 .navbar-items {
-    margin: 25px 10px 0 ;
+    margin: 40px 10px 0 ;
     cursor: pointer;
 }
 .navbar-items .active {
@@ -27,7 +26,7 @@
 .navbar-items a:hover {
     color:#A8894A;
 }
-.extra-navbar {
+/* .extra-navbar {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -38,7 +37,7 @@
     width: 100%;
     font-size: 130%;
     z-index: 1;
-}
+} */
 .extra-navbar a:visited, .extra-navbar a:link {
     color: white;
     list-style: none;
@@ -49,9 +48,32 @@
 }
 
 .extra-navbar-items {
-    margin: 25px 10px 0 ;
+    margin: 40px 10px 0 ;
     cursor: pointer;
 }
 #edesm_logo{
     width: 220px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.nav_scrolled {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    color: #FFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 135%;
+    z-index: 1;
+    background-image : linear-gradient(to bottom, 
+                    rgba(0,0,0, 1), 
+                    rgba(0,0,0, 0) 90%);
+    transition: all .3s linear;
+}
+#edesm_logo_scrolled {
+    width: 240px;
+    cursor: pointer;
+    transition: all .3s linear;
 }
