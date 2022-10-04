@@ -77,3 +77,6 @@
     cursor: pointer;
     transition: all .3s linear;
 }
+#edesm_logo:hover {
+    width: 240px;
+}

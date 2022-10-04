@@ -39,4 +39,9 @@ export default [
         title: "Macaron",
         coverImg: "https://images.unsplash.com/photo-1606209005463-5718385da56b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNha2V8ZW58MHwwfDB8YmxhY2t8&auto=format&fit=crop&w=500&q=60"
     },
+    {
+        id: 9,
+        title: "Mousse torták, desszertek",
+        coverImg: "https://images.unsplash.com/photo-1606209005463-5718385da56b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNha2V8ZW58MHwwfDB8YmxhY2t8&auto=format&fit=crop&w=500&q=60"
+    },
 ]
