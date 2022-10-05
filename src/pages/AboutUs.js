@@ -5,11 +5,15 @@ export function AboutUs() {
         <div className="about_us">
             <div id="aboutus">
                 <div className="content">
-                    <img src={macaron} alt="macaron" className="macaron_background" />
-                    {/* <div className="aboutusframes">
-                        <div className="aboutus_frame">Lorem Ipsum</div>
-                        <div className="aboutus_frame">Lorem Ipsum</div>
-                    </div> */}
+                    <div className="aboutus_text">
+                        <p>A torták, desszertek szeretete, elkészitésének élménye gyerekkorom óta kisér. Az új divatirányzatok, formatorták, egyedi dekorációk magukkal ragadtak, folyamatos képzéseken vettem részt, majd megnyitottam az ÉdesM Desszertműhelyt.</p>
+                        <br></br>
+                        <p>Ma már egy születésnap, keresztelő, családi rendezvény szinte kötelező eleme a torta, mely egyedivé, személyessé tehető, s igy  ajándékká válik.</p>
+
+                        <br></br>
+                        <p>Prémium minőségű alapanyagokkal dolgozom, melynek köszönhetően  a visszajelzések alapján megrendelőim maximálisan elégedettek.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
