@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact {
+    /* background-image: url("../images/blue_marble_background.jpg");
+    max-width: 100%;
+    background-size: cover;
+    text-align: center; */
+    background-color: black;
+    
+}
