@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-
+import "./contact.css"
 export function Contact() {
     return (
         <>
-            <div className="contact">
-                <h1 id="contact">Elérhetőség</h1>
+            <div className="contact" id="contact">
+                
                 <Link to="/faq">
                    Gyakran ismételt kérdések
                 </Link>

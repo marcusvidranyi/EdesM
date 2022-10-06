@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', sans-serif;
 }
 
 #aboutus {
@@ -28,9 +27,18 @@
     
 }
 .aboutus_text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: start;
     display: inline-block;
-    margin: 5rem 55rem 0 0;
+    margin: 3rem 55rem 0 0;
     max-width: 230px;
 
+}
+.line_decoration {
+    position: absolute;
+    margin-top: 80px;
+    left: 50%;
+    height: 410px;
+    width: 2px;
+    background-image: linear-gradient(to bottom, #FFFF 50%, #A8894A 40%);
 }

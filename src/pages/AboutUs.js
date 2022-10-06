@@ -1,8 +1,11 @@
 import macaron from "../images/macaron.png"
-import "./aboutus.css"
+import "./aboutus.css";
+import { ImageSlider } from "../components/ImageSlider";
 export function AboutUs() {
     return (
+        <>
         <div className="about_us">
+            <div className="line_decoration"></div>
             <div id="aboutus">
                 <div className="content">
                     <div className="aboutus_text">
@@ -17,5 +20,7 @@ export function AboutUs() {
                 </div>
             </div>
         </div>
+        <ImageSlider />
+        </>
     )
 }
