@@ -28,7 +28,7 @@ export function Products() {
         )
     });
 
-
+    
     return (
         <div className="products_container" id="products">
             <div className="between_main_and_products_container">
@@ -38,7 +38,7 @@ export function Products() {
                 <div className="products">
                     {cards}
                 </div>
-                <ProductModal open={openModal} title={productsData[modalKey].title} />
+                <ProductModal open={openModal} title={productsData[modalKey].title} image={productsData[modalKey].modalImg} />
             </div>
         </div>
     )
