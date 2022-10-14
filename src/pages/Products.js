@@ -1,17 +1,32 @@
 import "./products.css";
-import { ProductCard } from "../components/ProductComponents/ProductCard"
+import { ProductCard } from "../components/ProductComponents/ProductCard";
+import { ProductModal } from "../components/ProductComponents/ProductModal";
 import productsData from "../data/productsData";
+import { useState, useEffect } from "react";
 
 export function Products() {
 
+    const [openModal, setOpenModal] = useState(false);
+    const [modalKey, setModalKey] = useState(0);
+
+    const clickHandler = (key) => (event) => {
+        event.preventDefault();
+        setModalKey(key - 1)
+        setOpenModal(true)
+
+    }
+
     const cards = productsData.map(item => {
+        const key = item.id
         return (
-            <ProductCard
-                key={item.id}
-                {...item}
-            />
+            <div key={key} onClick={clickHandler(key)} >
+                <ProductCard
+                    key={item.id}
+                    {...item}
+                />
+            </div>
         )
-    })
+    });
 
 
     return (
@@ -23,6 +38,7 @@ export function Products() {
                 <div className="products">
                     {cards}
                 </div>
+                <ProductModal open={openModal} title={productsData[modalKey].title} />
             </div>
         </div>
     )
