@@ -7,12 +7,11 @@ import { Contact } from "./Contact";
 
 export function FrontPage() {
 
-    
-    
+
+
     return (
         <>
             <NavBar />
-            
             <Main />
             <Products />
             <AboutUs />
