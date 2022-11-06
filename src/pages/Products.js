@@ -11,8 +11,9 @@ export function Products() {
 
     const clickHandler = (key) => (event) => {
         event.preventDefault();
-        setModalKey(key - 1)
-        setOpenModal(true)
+        setModalKey(key - 1);
+        setOpenModal(true);
+        
 
     }
 
@@ -27,7 +28,7 @@ export function Products() {
             </div>
         )
     });
-
+    
     
     return (
         <div className="products_container" id="products">
@@ -38,7 +39,9 @@ export function Products() {
                 <div className="products">
                     {cards}
                 </div>
-                <ProductModal open={openModal} title={productsData[modalKey].title} image={productsData[modalKey].modalImg} />
+                <div className="product_modal">
+                <ProductModal open={openModal} onClose={() => setOpenModal(false)} title={productsData[modalKey].title} image={productsData[modalKey].modalImg} propsKey={modalKey}/>
+                </div>
             </div>
         </div>
     )
