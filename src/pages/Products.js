@@ -13,7 +13,7 @@ export function Products() {
         event.preventDefault();
         setModalKey(key - 1);
         setOpenModal(true);
-        
+
 
     }
 
@@ -28,8 +28,8 @@ export function Products() {
             </div>
         )
     });
-    
-    
+
+
     return (
         <div className="products_container" id="products">
             <div className="between_main_and_products_container">
@@ -40,7 +40,12 @@ export function Products() {
                     {cards}
                 </div>
                 <div className="product_modal">
-                <ProductModal open={openModal} onClose={() => setOpenModal(false)} title={productsData[modalKey].title} image={productsData[modalKey].modalImg} propsKey={modalKey}/>
+                    <ProductModal
+                        open={openModal} 
+                        onClose={() => setOpenModal(false)} 
+                        title={productsData[modalKey].title} 
+                        image={productsData[modalKey].modalImg} 
+                        propsKey={modalKey} />
                 </div>
             </div>
         </div>
