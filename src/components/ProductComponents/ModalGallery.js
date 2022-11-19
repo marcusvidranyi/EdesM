@@ -1,5 +1,5 @@
 import "./modalGallery.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCircleChevronLeft,
@@ -28,6 +28,25 @@ export function ModalGallery({ modalImages }) {
     const nextSlide = () => {
         slideNumber + 1 === modalImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1)
     }
+
+
+    const detectKeydown = (event) => {
+        console.log("Clicked key: ", event.key)
+        switch (event.key) {
+            case "ArrowLeft":
+                slideNumber === 0 ? setSlideNumber(modalImages.length - 1) : setSlideNumber(slideNumber - 1)
+                break;
+            case "ArrowRight":
+                slideNumber + 1 === modalImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1)
+                break;
+        };
+    }
+    useEffect(() => {
+        document.addEventListener('keydown', detectKeydown)
+        return () => document.removeEventListener('keydown', detectKeydown)
+
+    })
+
     return (
         <>
             {
@@ -39,22 +58,21 @@ export function ModalGallery({ modalImages }) {
                     <div className="fullScreenImage">
                         <img src={modalImages[slideNumber].cake_img} alt="SliderImage" />
                     </div>
-
                 </div>
-
             }
-
             <div className="galleryWrap">
-
                 {
                     modalImages && modalImages.map((slide, index) => {
                         return (
-                            <div className="gallery_container" key={index} onClick={() => handleOpenModal(index)}>
+                            <div className="gallery_container"
+                                key={index}
+                                onClick={() => handleOpenModal(index)}
+                            >
                                 <div className="gallery_item" >
                                     <div className="image" >
                                         <img src={slide.cake_img} alt="cake images" />
                                     </div>
-                                    <div className="text">Random</div>
+                                    <div className="text">Lorem</div>
                                 </div>
                             </div>
                         )
