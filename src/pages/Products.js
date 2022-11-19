@@ -2,7 +2,7 @@ import "./products.css";
 import { ProductCard } from "../components/ProductComponents/ProductCard";
 import { ProductModal } from "../components/ProductComponents/ProductModal";
 import productsData from "../data/productsData";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export function Products() {
 

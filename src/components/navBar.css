@@ -18,6 +18,7 @@
 .navbar-items {
     margin: 40px 10px 0 ;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
 .navbar-items .active {
     color:#A8894A;
