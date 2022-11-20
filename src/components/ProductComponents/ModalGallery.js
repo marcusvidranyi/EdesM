@@ -34,10 +34,13 @@ export function ModalGallery({ modalImages }) {
         console.log("Clicked key: ", event.key)
         switch (event.key) {
             case "ArrowLeft":
-                slideNumber === 0 ? setSlideNumber(modalImages.length - 1) : setSlideNumber(slideNumber - 1)
+                prevSlide();
                 break;
             case "ArrowRight":
-                slideNumber + 1 === modalImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1)
+                nextSlide();
+                break;
+            case "Escape":
+                handleCloseModal();
                 break;
         };
     }
