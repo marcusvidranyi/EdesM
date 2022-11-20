@@ -1,5 +1,6 @@
 import galleryImages from "../../data/galleryImages";
 import { ModalGallery } from "./ModalGallery";
+import "./modalGallery.css";
 
 export function ProductModal({ title, open, onClose, image, propsKey }) {
     if (!open) return null

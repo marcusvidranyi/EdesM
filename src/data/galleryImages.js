@@ -209,6 +209,26 @@ export default [
             cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
 
         },
+        {
+            id: 9,
+            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+
+        },
+        {
+            id: 10,
+            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+
+        },
+        {
+            id: 11,
+            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+
+        },
+        {
+            id: 12,
+            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+
+        },
     ],
     [
         {
