@@ -77,6 +77,9 @@
 #edesm_logo:hover {
     width: 240px;
 }
+#edesm_logo_scrolled:hover {
+    width: 210px;
+}
 .lastletter {
     font-family: Parisienne;
     color:#A8894A;

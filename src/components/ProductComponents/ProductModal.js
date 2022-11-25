@@ -8,6 +8,7 @@ export function ProductModal({ title, open, onClose, image, propsKey }) {
         <div className="product_overlay">
             <div className="product_modal_container">
                 <h3>{title}</h3>
+                <button onClick={onClose}>close</button>
                 <ModalGallery modalImages={galleryImages[propsKey]} />
                 <button onClick={onClose}>close</button>
             </div>
