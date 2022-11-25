@@ -10,11 +10,12 @@
 }
 
 .products {
-  height: 100vh
+  height: 100vh;
 }
 
 .about_us {
   height: 100vh;
+  padding-top: 5%;
 }
 
 .contact {
@@ -29,5 +30,5 @@
 
 .how-to {
   height: 100vh;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
