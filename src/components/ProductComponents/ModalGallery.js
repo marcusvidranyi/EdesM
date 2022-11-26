@@ -12,8 +12,6 @@ export function ModalGallery({ modalImages }) {
     const [slideNumber, setSlideNumber] = useState(0);
     const [openModal, setOpenModal] = useState(false);
 
-
-
     const handleOpenModal = (index) => {
         setSlideNumber(index);
         setOpenModal(true);
@@ -50,6 +48,7 @@ export function ModalGallery({ modalImages }) {
 
     })
 
+
     return (
         <>
             {
@@ -73,7 +72,14 @@ export function ModalGallery({ modalImages }) {
                             >
                                 <div className="gallery_item" >
                                     <div className="image" >
-                                        <img src={slide.cake_img} alt="cake images" />
+                                        <img
+                                            src={slide.cake_img}
+                                            loading="lazy"
+                                            effect="blur"
+                                            className="actual_images"
+                                            alt="cake images"
+
+                                        />
                                     </div>
                                     <div className="text">Lorem</div>
                                 </div>
