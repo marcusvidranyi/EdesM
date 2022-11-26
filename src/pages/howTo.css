@@ -9,4 +9,29 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/howto_background.jpg");
     background-size: 100%;
     background-position: center;
+    color: #FFFF;
+}
+.howto_text {
+    padding-top: 20vh;
+    padding-left: 10vh;
+    max-width: 60vw;
+}
+.howto_text > h1,
+.howto_text > h2,
+.howto_text > h3 {
+    margin-bottom: 2%;
+    color: #A8894A;;
+}
+.howto_text > h3 {
+    margin-top: 2%;
+    
+}
+.back_button_howto {
+    margin: 2% 0 0 0;
+    cursor: pointer;
+    border: 2px solid #FFFF;
+    background-color: #836a39;
+    border-radius: 10px;
+    width: 13%;
+    text-align: center;
 }
