@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     padding-top: 5%;
+    background-color: black;
 }
 
 .contact_box_left,
@@ -27,6 +28,7 @@
     border-radius: 20px;
     text-align: center;
     color: #A8894A;
+    
 
 }
 .contact_box_left {
@@ -43,13 +45,16 @@
     background-color: #A8894A;
     width: 100vh;
     height: 3px;
+    
 }
 .footer_line_box {
     display: flex;
     justify-content: center;
+    
 }
 .footer_box {
-    margin-top: 2%;
+    padding-top: 2%;
+    background-color: black;
     
 }
 .footer_links {
