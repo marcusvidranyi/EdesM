@@ -4,7 +4,9 @@
     box-sizing: border-box;
 
 }
-.navbar, .extra-navbar {
+
+.navbar,
+.extra-navbar {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -15,44 +17,51 @@
     z-index: 1;
     transition: all .3s linear;
 }
-.navbar-items {
-    margin: 40px 10px 0 ;
+
+.navbar-items,
+.extra-navbar-items {
+    margin: 40px 10px 0;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .navbar-items .active {
-    color:#A8894A;
-    
+    color: #A8894A;
+
 }
-.navbar-items a:hover {
-    color:#A8894A;
+
+.navbar-items a:hover,
+.extra-navbar a:hover {
+    color: #A8894A;
     border: 1px solid #A8894A;
     padding: 15px;
     margin: -10px;
     transition: all .1s linear;
     border-radius: 55%;
 }
-.navbar-items a {
+
+.navbar-items a,
+.extra-navbar a {
     transition: all .3s linear;
 }
-.extra-navbar a:visited, .extra-navbar a:link {
+
+.extra-navbar a:visited,
+.extra-navbar a:link {
     color: white;
     list-style: none;
     text-decoration: none;
 }
+
 .extra-navbar-items a:hover {
-    color:#A8894A;
+    color: #A8894A;
 }
 
-.extra-navbar-items {
-    margin: 40px 10px 0 ;
-    cursor: pointer;
-}
-#edesm_logo{
+#edesm_logo {
     width: 220px;
     cursor: pointer;
     transition: all .3s linear;
 }
+
 .nav_scrolled {
     display: flex;
     list-style: none;
@@ -64,23 +73,73 @@
     width: 100%;
     font-size: 120%;
     z-index: 1;
-    background-image : linear-gradient(to bottom, 
-                    rgba(0,0,0, 1), 
-                    rgba(0,0,0, 0) 140%);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0) 140%);
     transition: all .3s linear;
 }
+
 #edesm_logo_scrolled {
     width: 200px;
     cursor: pointer;
     transition: all .3s linear;
 }
+
 #edesm_logo:hover {
     width: 240px;
 }
+
 #edesm_logo_scrolled:hover {
     width: 210px;
 }
+
 .lastletter {
     font-family: Parisienne;
-    color:#A8894A;
+    color: #A8894A;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+       }
+
+    .navbar,
+    .extra-navbar,
+    .nav_scrolled {
+        position: absolute;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 10vh;
+        font-size: 150%;
+    }
+
+    .navbar>img,
+    .nav_scrolled>img {
+        position: absolute;
+        top: 15vh;
+        margin: 0 auto 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    
+    #edesm_logo, #edesm_logo_scrolled {
+        width: 300px;
+    }
+    
+
 }

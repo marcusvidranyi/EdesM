@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     margin: 50px;
-    
+
 
 }
 
@@ -49,9 +49,8 @@
     background-color: black;
     color: white;
     padding-bottom: 100px;
-    /* background-image: url("../images/black-marble_background.jpg"); */
     background-size: 100%;
-    /* height: 100vh; */
+    
 
 
 }
@@ -95,4 +94,30 @@
 
 .product_modal_container {
     height: 750px;
+}
+
+@media only screen and (max-width: 700px) {
+    * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+    .productcard {
+        margin: 1vh;
+        padding: 0;
+        width: 35vw;
+        height: 30%;
+        color: white;
+        border: 3px solid #A8894A;
+        background-color: black;
+        overflow: hidden;
+        background-position: -10px -160px;
+        
+        
+    }
+    .products {
+        margin: 0;
+    }
 }
