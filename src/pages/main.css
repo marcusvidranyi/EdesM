@@ -9,6 +9,7 @@
     text-align: center;
     position: relative
 }
+
 .cake_background {
     max-width: 100%;
     max-height: 100%;
@@ -16,18 +17,39 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .main-text-top {
     color: white;
     font-family: 'Cormorant', serif;
 }
+
 .main-text-bottom {
     color: #A8894C;
     font-family: 'Cormorant', serif;
 }
+
 .main-text-box {
     position: absolute;
     top: 25%;
     left: 0;
     right: 0;
     font-size: 150%;
+}
+
+@media only screen and (max-width: 700px) {
+    .cake_background {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -2em;
+        text-align: center;
+
+    }
+    .main-text-box{
+        display: none;
+    }
+    
+
 }

@@ -9,8 +9,10 @@ import {
 
 export function ModalGallery({ modalImages }) {
 
+
     const [slideNumber, setSlideNumber] = useState(0);
     const [openModal, setOpenModal] = useState(false);
+
 
     const handleOpenModal = (index) => {
         setSlideNumber(index);
@@ -47,8 +49,7 @@ export function ModalGallery({ modalImages }) {
         return () => document.removeEventListener('keydown', detectKeydown)
 
     })
-
-
+    
     return (
         <>
             {

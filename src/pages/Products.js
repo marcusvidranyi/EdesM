@@ -20,7 +20,7 @@ export function Products() {
     const cards = productsData.map(item => {
         const key = item.id
         return (
-            <div key={key} onClick={clickHandler(key)} >
+            <div key={key} onClick={clickHandler(key)} className="productcard-container">
                 <ProductCard
                     key={item.id}
                     {...item}
