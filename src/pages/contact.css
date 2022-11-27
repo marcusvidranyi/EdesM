@@ -10,6 +10,9 @@
     background-size: cover;
     text-align: center; */
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .contact_boxes {
@@ -28,12 +31,14 @@
     border-radius: 20px;
     text-align: center;
     color: #A8894A;
-    
+
 
 }
+
 .contact_box_left {
     padding-top: 5%;
 }
+
 .contact_box_right {
     overflow: hidden;
 }
@@ -41,24 +46,59 @@
 .edesm-logo {
     width: 40vh;
 }
+
 .footer_line {
     background-color: #A8894A;
     width: 100vh;
     height: 3px;
-    
+
 }
+
 .footer_line_box {
     display: flex;
     justify-content: center;
-    
+    margin-top: 2%;
+
 }
+
 .footer_box {
-    padding-top: 2%;
+    margin-top: auto;
     background-color: black;
-    
+
 }
+
 .footer_links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 2%;
+}
+
+.footer_faq_link,
+.footer_howto_link {
+    border: 1px solid #A8894A;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffff;
+    font-size: 130%;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5%;
+}
+
+
+.footer_faq_link:hover,
+.footer_howto_link:hover {
+    color: #A8894A;
+}
+.footer_howto_link {
+    margin-left: 5%;
+}
+.tothetopbutton {
+    text-align: center;
+    font-size: xxx-large;
+    color: #A8894A;
+    cursor: pointer;
+}
+.tothetopbutton:hover {
+    color: rgb(168, 168, 168);
 }

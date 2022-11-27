@@ -5,7 +5,7 @@ import {
     faCircleChevronLeft,
     faCircleChevronRight,
     faCircleXmark
-} from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-solid-svg-icons";
 
 export function ModalGallery({ modalImages }) {
 

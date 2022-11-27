@@ -1,5 +1,5 @@
 import "./main.css";
-import cake_background from "../images/cake_background.jpg"
+import cake_background from "../images/cake_background_2.jpg"
 export function Main() {
     return (
         <div className="main">
