@@ -1,9 +1,20 @@
 import { Link } from "react-router-dom";
 import "./contact.css";
 import edesm_logo from "../images/edesm_logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faCircleUp
+} from "@fortawesome/free-solid-svg-icons";
 
 
 export function Contact() {
+    const clickToTheTop = () => {
+        var Scroll = require('react-scroll');
+        var scroll = Scroll.animateScroll;
+        scroll.scrollToTop();
+    }
+
+
     return (
         <>
             <div className="contact" id="contact">
@@ -29,10 +40,13 @@ export function Contact() {
                         <div className="footer_line"></div>
                     </div>
                     <div className="footer_links">
-                        <Link to="/faq">
+                        <Link to="/faq" className="footer_faq_link">
                             Gyakran ismételt kérdések
                         </Link>
-                        <Link to="/howto">
+                        <div>
+                            <FontAwesomeIcon icon={faCircleUp} className="tothetopbutton" onClick={clickToTheTop}/>
+                        </div>
+                        <Link to="/howto" className="footer_howto_link">
                             Rendelés menete
                         </Link>
                     </div>
