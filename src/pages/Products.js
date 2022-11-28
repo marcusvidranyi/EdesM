@@ -41,10 +41,10 @@ export function Products() {
                 </div>
                 <div className="product_modal">
                     <ProductModal
-                        open={openModal} 
-                        onClose={() => setOpenModal(false)} 
-                        title={productsData[modalKey].title} 
-                        image={productsData[modalKey].modalImg} 
+                        open={openModal}
+                        onClose={() => setOpenModal(false)}
+                        title={productsData[modalKey].title}
+                        image={productsData[modalKey].modalImg}
                         propsKey={modalKey} />
                 </div>
             </div>
