@@ -31,7 +31,6 @@ export function ModalGallery({ modalImages }) {
 
 
     const detectKeydown = (event) => {
-        console.log("Clicked key: ", event.key)
         switch (event.key) {
             case "ArrowLeft":
                 prevSlide();
@@ -71,8 +70,8 @@ export function ModalGallery({ modalImages }) {
                                 key={index}
                                 onClick={() => handleOpenModal(index)}
                             >
-                                <div className="gallery_item" >
-                                    <div className="image" >
+                                <div className="gallery_item">
+                                    <div className="image">
                                         <img
                                             src={slide.cake_img}
                                             loading="lazy"
@@ -82,7 +81,7 @@ export function ModalGallery({ modalImages }) {
 
                                         />
                                     </div>
-                                    <div className="text">Lorem</div>
+                                    {/* <div className="text">Lorem</div> */}
                                 </div>
                             </div>
                         )
