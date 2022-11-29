@@ -23,7 +23,7 @@ export function HowTo() {
                     <p> Egyedi és esküvői torta rendelése esetén megrendeléskor 50% foglaló fizetendő, a fennmaradó összeg   átvétel előtt átutalással vagy az átvétel  napján, készpénzben fizetendő.
                         Klasszikus torta rendelése esetén fizetés átvételkor.
                     </p>
-                    <div className="back_button_howto" onClick={() => navigate(-1)}>vissza a főoldalra</div>
+                    <div className="back_button_howto" onClick={() => navigate(-1)}>vissza a Főoldalra</div>
                 </div>
                 
             </div>

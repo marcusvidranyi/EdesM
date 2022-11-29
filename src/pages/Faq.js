@@ -22,7 +22,7 @@ export function Faq() {
                     <h3>Csak torta rendelhető?</h3>
                     <p>Rendezvényekre (esküvő, családi összejövetel, céges rendezvények) komplett desszertkinálat is rendelhető, igény szerinti süteményekkel, bonbonokkal, macaronokkal, különleges desszertekkel.
                     </p>
-                    <div className="back_button_faq" onClick={() => navigate(-1)}>vissza a főoldalra</div>
+                    <div className="back_button_faq" onClick={() => navigate(-1)}>vissza a Főoldalra</div>
                 </div>
             </div>
         </>

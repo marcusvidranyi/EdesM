@@ -2,7 +2,11 @@ import "./products.css";
 import { ProductCard } from "../components/ProductComponents/ProductCard";
 import { ProductModal } from "../components/ProductComponents/ProductModal";
 import productsData from "../data/productsData";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 
 export function Products() {
 
@@ -13,7 +17,11 @@ export function Products() {
         event.preventDefault();
         setModalKey(key - 1);
         setOpenModal(true);
+    }
 
+    const clickHandlerMailto = (event) => {
+        event.preventDefault();
+        window.location = 'mailto:edesmdesszert@gmail.com';
 
     }
 
@@ -29,20 +37,41 @@ export function Products() {
         )
     });
 
+    /* CLOSING MODAL TO OUTSIDE CLICK */
+
+    const refCloseModal = useRef(null);
+
+    /* const handleClickOutsideModal = event => {
+        if (!refCloseModal.current?.contains(event.target)) {
+            setOpenModal(false)
+            console.log("handleClickOutsideModal")
+        }
+
+    }
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutsideModal, true)
+        return () => document.removeEventListener("click", handleClickOutsideModal, false)
+    }) */
+
 
     return (
         <div className="products_container" id="products">
             <div className="between_main_and_products_container">
-                <span>RENDELJEN MOST:</span><span style={{ color: "#A8894A" }}>edesmdesszert@gmail.com</span>
+                <span>RENDELJEN MOST:</span>
+                <span style={{ color: "#A8894A" }}>
+                    <FontAwesomeIcon icon={faEnvelope} className="main-mail-icon" onClick={clickHandlerMailto} />
+                    <a href="mailto:edesmdesszert@gmail.com" className='main-email'>edesmdesszert@gmail.com</a>
+                    
+                </span>
             </div>
             <div className="product_categry_container">
                 <div className="products">
                     {cards}
                 </div>
-                <div className="product_modal">
+                <div className="product_modal" ref={refCloseModal}>
                     <ProductModal
                         open={openModal}
-                        onClose={() => setOpenModal(false)}
+                        onClose={() => { setOpenModal(false) }}
                         title={productsData[modalKey].title}
                         image={productsData[modalKey].modalImg}
                         propsKey={modalKey} />
