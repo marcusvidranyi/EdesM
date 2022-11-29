@@ -12,7 +12,7 @@ export function ProductModal({ title, open, onClose, image, propsKey }) {
 
         switch (event.key) {
             case "Escape":
-                onClose()
+                onClose();
                 break;
         };
 
@@ -21,7 +21,8 @@ export function ProductModal({ title, open, onClose, image, propsKey }) {
         document.addEventListener('keydown', detectKeydownModal)
         return () => document.removeEventListener('keydown', detectKeydownModal)
 
-    })
+    }, []);
+
 
 
     if (!open) return null
@@ -30,6 +31,7 @@ export function ProductModal({ title, open, onClose, image, propsKey }) {
         <div className="product_overlay">
             <div className="product_modal_container">
                 <div className="title_and_close">
+                    <div className="gallery_modal_close" style={{ visibility: "hidden" }}><FontAwesomeIcon icon={faCircleXmark} className="btnClose" /></div>
                     <h3>{title}</h3>
                     <div className="gallery_modal_close"><FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={onClose} /></div>
                 </div>

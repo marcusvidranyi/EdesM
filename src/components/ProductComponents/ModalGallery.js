@@ -1,5 +1,5 @@
 import "./modalGallery.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCircleChevronLeft,
@@ -19,8 +19,9 @@ export function ModalGallery({ modalImages }) {
         setOpenModal(true);
     }
 
-    const handleCloseModal = () => {
+    const handleCloseModal = (event) => {
         setOpenModal(false)
+
     }
     const prevSlide = () => {
         slideNumber === 0 ? setSlideNumber(modalImages.length - 1) : setSlideNumber(slideNumber - 1)
@@ -47,17 +48,38 @@ export function ModalGallery({ modalImages }) {
         document.addEventListener('keydown', detectKeydown)
         return () => document.removeEventListener('keydown', detectKeydown)
 
-    })
-    
+    });
+
+
+    /* CLOSING MODAL TO OUTSIDE CLICK */
+
+    const refOne = useRef(null);
+    const refTwo = useRef(null);
+    const refThree = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if ((!refOne.current?.contains(event.target)) &&
+            (!refTwo.current?.contains(event.target)) &&
+            (!refThree.current?.contains(event.target))) {
+
+            handleCloseModal();
+        }
+
+    }
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside, true)
+        return () => document.removeEventListener('click', handleClickOutside)
+    }, [openModal]);
+
     return (
         <>
             {
                 openModal &&
                 <div className="sliderWrap">
                     <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={handleCloseModal} />
-                    <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} />
-                    <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} />
-                    <div className="fullScreenImage">
+                    <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} ref={refTwo} />
+                    <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} ref={refThree} />
+                    <div className="fullScreenImage" ref={refOne} >
                         <img src={modalImages[slideNumber].cake_img} alt="SliderImage" />
                     </div>
                 </div>
@@ -68,7 +90,7 @@ export function ModalGallery({ modalImages }) {
                         return (
                             <div className="gallery_container"
                                 key={index}
-                                onClick={() => handleOpenModal(index)}
+                                onClick={(event) => { handleOpenModal(index) }}
                             >
                                 <div className="gallery_item">
                                     <div className="image">
