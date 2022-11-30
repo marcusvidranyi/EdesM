@@ -112,6 +112,7 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     cursor: pointer;
     opacity: 0.6;
     color: #fff;
+    z-index: 999;
 }
 
 .gallery_modal_close:hover {

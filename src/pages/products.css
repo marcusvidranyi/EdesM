@@ -112,6 +112,8 @@
 
 }
 
+/* SCROLL ANIMATION */
+
 @media only screen and (max-width: 700px) {
     * {
         -webkit-transition: none !important;

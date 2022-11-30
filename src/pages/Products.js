@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export function Products() {
 
@@ -28,7 +30,7 @@ export function Products() {
     const cards = productsData.map(item => {
         const key = item.id
         return (
-            <div key={key} onClick={clickHandler(key)} className="productcard-container">
+            <div key={key} data-aos="zoom-in" onClick={clickHandler(key)} className="productcard-container">
                 <ProductCard
                     key={item.id}
                     {...item}
@@ -53,10 +55,15 @@ export function Products() {
         return () => document.removeEventListener("click", handleClickOutsideModal, false)
     }) */
 
+    /* SCROLL ANIMATION */
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
 
     return (
         <div className="products_container" id="products">
-            <div className="between_main_and_products_container">
+            <div className="between_main_and_products_container" data-aos="fade-up">
                 <span>RENDELJEN MOST:</span>
                 <span style={{ color: "#A8894A" }}>
                     <FontAwesomeIcon icon={faEnvelope} className="main-mail-icon" onClick={clickHandlerMailto} />
@@ -65,7 +72,7 @@ export function Products() {
                 </span>
             </div>
             <div className="product_categry_container">
-                <div className="products">
+                <div className="products" >
                     {cards}
                 </div>
                 <div className="product_modal" ref={refCloseModal}>

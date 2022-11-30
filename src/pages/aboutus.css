@@ -5,42 +5,47 @@
 }
 
 #aboutus {
-   /*  height: 100%; */
-    background-color: black;
+    /*  height: 100%; */
+    /* background-color: black; */
     color: white;
     /* padding-top: 250px; */
 }
+
 .about_us {
     background-color: black;
-}
-
-.content {
-    background-color: black;
-    background-image: url("../images/macaron.png");
-    max-width: 100%;
-    height: 60vh;
-    margin: 10vh 0 0 17vw;
-    /* padding-bottom: 50px; */
-    background-position: center;
+    background-image: url("../images/frontview_cupcake.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    text-align: center;
-    
-}
-.aboutus_text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: start;
-    display: inline-block;
-    margin: 3rem 55rem 0 0;
-    max-width: 230px;
-    text-size-adjust: auto;
+    background-size: cover;
+    background-position: 0% 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-.line_decoration {
-    position: absolute;
-    margin-top: 15vh;
-    left: 50%;
-    height: 410px;
-    width: 2px;
-    background-image: linear-gradient(to bottom, #FFFF 50%, #A8894A 40%);
+
+.firstbox {
+    
+    border-style: solid;
+    border-width: 0 3px 0 0;
+    border-image: linear-gradient(to bottom, #FFFF 50%, #A8894A 40%)1;
+    width: 15%;
+    height: 50vh;
+
 }
+
+.secondbox {
+    color: #FFFF;
+    font-size: large;
+    width: 15%;
+    height: 50vh;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    /* display: flex;
+    align-items: center;
+    flex-wrap: wrap; */
+
+}
+
