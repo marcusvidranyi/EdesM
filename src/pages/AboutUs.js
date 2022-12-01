@@ -1,5 +1,4 @@
 import { ImageSlider } from "../components/ImageSlider";
-import macaron from "../images/macaron.png"
 import "./aboutus.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
