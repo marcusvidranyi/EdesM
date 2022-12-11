@@ -13,7 +13,7 @@
     color: #FFFF;
     position: fixed;
     width: 100%;
-    font-size: 140%;
+    font-size: 1.5em;
     z-index: 1;
     transition: all .3s linear;
 }
@@ -71,11 +71,18 @@
     left: 0;
     top: 0;
     width: 100%;
-    font-size: 120%;
     z-index: 1;
+    font-size: 1.5em;
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 1),
             rgba(0, 0, 0, 0) 140%);
+    transition: all .3s linear;
+}
+.nav_scrolled > li {
+    transform: scale(0.9);
+    transition: all .3s linear;
+}
+.navbar > li {
     transition: all .3s linear;
 }
 

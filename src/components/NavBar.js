@@ -32,7 +32,7 @@ export function NavBar() {
                     <Link to="about_us" spy={true} smooth={true} offset={0} duration={500}>Rólun<span className="lastletter">K</span></Link>
                 </li>
                 <li className="navbar-items">
-                    <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>Elérhetősé<span className="lastletter">G</span></Link>
+                    <Link to="contact" spy={true} smooth={true} offset={200} duration={500}>Elérhetősé<span className="lastletter">G</span></Link>
                 </li>
             </ul>
         </nav>
