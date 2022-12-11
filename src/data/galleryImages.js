@@ -361,6 +361,51 @@ export default [
             cake_img: require('../images/cakes/received_1386935114985247.jpeg')
 
         },
+        {
+            id: 73,
+            cake_img: require('../images/cakes/IMG_20200305_192819.jpg')
+
+        },
+        {
+            id: 74,
+            cake_img: require('../images/cakes/IMG_20191207_175040.jpg')
+
+        },
+        {
+            id: 75,
+            cake_img: require('../images/cakes/IMG_20191207_175217.jpg')
+
+        },
+        {
+            id: 76,
+            cake_img: require('../images/cakes/IMG_20191212_144644.jpg')
+
+        },
+        {
+            id: 77,
+            cake_img: require('../images/cakes/IMG_20190906_171936.jpg')
+
+        },
+        {
+            id: 78,
+            cake_img: require('../images/cakes/IMG_20191129_174916.jpg')
+
+        },
+        {
+            id: 79,
+            cake_img: require('../images/cakes/IMG_20221103_093243.jpg')
+
+        },
+        {
+            id: 80,
+            cake_img: require('../images/cakes/IMG_20200605_175420.jpg')
+
+        },
+        {
+            id: 81,
+            cake_img: require('../images/cakes/IMG_20200626_204642.jpg')
+
+        },
     ],
     [
         {
@@ -407,42 +452,37 @@ export default [
     [
         {
             id: 1,
-            cake_img: require('../images/wedding_cakes/IMG_20210407_090101.jpg')
+            cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg')
 
         },
         {
             id: 2,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074315.jpg')
+            cake_img: require('../images/best_of_cakes/Huncut szilvaherceg.jpg')
 
         },
         {
             id: 3,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074507.jpg')
+            cake_img: require('../images/best_of_cakes/Milotai mézes.jpg')
 
         },
         {
             id: 4,
-            cake_img: require('../images/wedding_cakes/IMG_20220129_125204.jpg')
+            cake_img: require('../images/best_of_cakes/Nagyi kedvence.jpg')
 
         },
         {
             id: 5,
-            cake_img: require('../images/wedding_cakes/IMG_20220606_094538.jpg')
+            cake_img: require('../images/best_of_cakes/Őrség zöld aranya.jpg')
 
         },
         {
             id: 6,
-            cake_img: require('../images/wedding_cakes/IMG_20220730_120132.jpg')
+            cake_img: require('../images/best_of_cakes/Pándi meggy torta.jpg')
 
         },
         {
             id: 7,
-            cake_img: require('../images/wedding_cakes/IMG_20220805_193907.jpg')
-
-        },
-        {
-            id: 8,
-            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+            cake_img: require('../images/best_of_cakes/Szatmári szilvatorta.jpg')
 
         },
     ],
@@ -847,6 +887,46 @@ export default [
             cake_img: require('../images/children_cakes/received_782345412195389.jpg')
 
         },
+        {
+            id: 81,
+            cake_img: require('../images/children_cakes/IMG_20200229_082612.jpg')
+
+        },
+        {
+            id: 82,
+            cake_img: require('../images/children_cakes/IMG_20200104_134037.jpg')
+
+        },
+        {
+            id: 83,
+            cake_img: require('../images/children_cakes/IMG_20221118_092931.jpg')
+
+        },
+        {
+            id: 84,
+            cake_img: require('../images/children_cakes/IMG_20221111_112527.jpg')
+
+        },
+        {
+            id: 85,
+            cake_img: require('../images/children_cakes/IMG_20221112_082645.jpg')
+
+        },
+        {
+            id: 86,
+            cake_img: require('../images/children_cakes/IMG_20221118_063733.jpg')
+
+        },
+        {
+            id: 87,
+            cake_img: require('../images/children_cakes/IMG_20221104_135351.jpg')
+
+        },
+        {
+            id: 88,
+            cake_img: require('../images/children_cakes/IMG_20221105_115102.jpg')
+
+        },
     ],
     [
         {
@@ -1039,171 +1119,48 @@ export default [
     [
         {
             id: 1,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20210723_121226.jpg')
 
         },
         {
             id: 2,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20210827_184155.jpg')
 
         },
         {
             id: 3,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20210924_094903.jpg')
 
         },
         {
             id: 4,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20211004_092507.jpg')
 
         },
         {
             id: 5,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20211028_152826.jpg')
 
         },
         {
             id: 6,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20220611_062017.jpg')
 
         },
         {
             id: 7,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20220617_143507.jpg')
 
         },
         {
             id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20220722_135434.jpg')
         },
         {
             id: 9,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
+            cake_img: require('../images/mousse_cakes/IMG_20220818_114108.jpg')
         },
-        {
-            id: 10,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 11,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 12,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
-        {
-            id: 8,
-            cake_img: require('../images/children_cakes/received_782345412195389.jpg')
-        },
+        
     ]
 
 
