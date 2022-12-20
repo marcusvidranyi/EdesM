@@ -44,15 +44,15 @@ export function Contact() {
                         <p>2431 Perkáta, Dózsa György utca 22.</p>
                         <p style={{ color: "#FFFF" }}>Telefon: 06501332553, 06703240377</p>
                         <a href="mailto:edesmdesszert@gmail.com" className='main-email'>Email: edesmdesszert@gmail.com</a>
-                        <h3 style={{color: "#FFFF"}}>Kérjük, hagyjon üzenetet!</h3>
+                        <h3 style={{ color: "#FFFF" }}>Kérjük, hagyjon üzenetet!</h3>
                         <form ref={form} onSubmit={sendEmail} className="contact_form">
-                            <label>Név</label>
+                            <label>Név:</label>
                             <input type="text" name="user_name" />
-                            <label>Email</label>
+                            <label>Email:</label>
                             <input type="email" name="user_email" />
-                            <label>Üzenet</label>
+                            <label>Üzenet:</label>
                             <textarea name="message" />
-                            <input type="submit" value="Elküld" className="contact_form_submitbutton"/>
+                            <input type="submit" value="Elküld" className="contact_form_submitbutton" />
                         </form>
                     </div>
                     <div className="contact_box_right">
