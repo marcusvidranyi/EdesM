@@ -51,8 +51,10 @@
     align-items: center;
     width: 100%;
     height: auto;
-    
 
+}
+.contact_form > label {
+    margin: 0.8vw 0 0 0;
 }
 
 .contact_form input:focus,
@@ -176,6 +178,7 @@ textarea {
     transition: all 0.2s linear;
 
 }
+
 #gmap_canvas {
     height: 45em;
     width: 100%;
