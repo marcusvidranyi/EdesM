@@ -16,6 +16,22 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+}
+
+.image_slider {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    
+   /*  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
 .main-text-top {
@@ -30,10 +46,11 @@
 
 .main-text-box {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 0;
     right: 0;
     font-size: 150%;
+    z-index: 9999;
 }
 
 @media only screen and (max-width: 700px) {
@@ -47,9 +64,10 @@
         text-align: center;
 
     }
-    .main-text-box{
+
+    .main-text-box {
         display: none;
     }
-    
+
 
 }

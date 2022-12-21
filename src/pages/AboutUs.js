@@ -1,4 +1,3 @@
-import { ImageSlider } from "../components/ImageSlider";
 import "./aboutus.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -17,7 +16,6 @@ export function AboutUs() {
                     <p>Prémium minőségű alapanyagokkal dolgozom, melynek köszönhetően  a visszajelzések alapján megrendelőim maximálisan elégedettek.
                     </p></div>
             </div>
-            <ImageSlider />
         </>
     )
 }
