@@ -453,6 +453,7 @@ export default [
         {
             id: 1,
             cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg')
+            
 
         },
         {
