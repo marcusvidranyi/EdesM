@@ -55,6 +55,18 @@
     transform: scale(1.5);
 }
 
+@media screen and (max-width: 768px) {
+
+    .galleryWrap {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 6fr);
+        grid-auto-rows: 20vw 20vw;
+        grid-gap: 20px;
+        margin: 2em 0 2em 0;
+    }
+}
+
 /* PRODUCT MODAL ANIMATED TEXT
 bug with positioning of text, removing .gallery_item > position relative fixes it */
 
@@ -100,10 +112,13 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 .title_and_close>h3 {
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
+    display: flex;
+    align-items: center;
     color: #A8894A;
     border: 3px solid #A8894A;
     border-radius: 15px;
     padding: 1%;
+    margin-top: 4%;
 }
 
 .gallery_modal_close {
@@ -113,6 +128,10 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     opacity: 0.6;
     color: #fff;
     z-index: 999;
+}
+
+.gallery_modal_close h3 {
+    background-color: blue;
 }
 
 .gallery_modal_close:hover {

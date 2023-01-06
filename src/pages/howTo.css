@@ -5,6 +5,10 @@
 
 }
 
+p > a {
+    color: #A8894A;
+}
+
 .how-to {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/howto_background.jpg");
     background-size: 100%;
