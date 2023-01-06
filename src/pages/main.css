@@ -56,6 +56,11 @@
 }
 
 @media only screen and (max-width: 700px) {
+
+    .image_slider {
+        display: none;
+    }
+
     .cake_background {
         position: absolute;
         margin-left: auto;

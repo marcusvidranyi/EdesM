@@ -30,7 +30,7 @@ export function Products() {
     const cards = productsData.map(item => {
         const key = item.id
         return (
-            <div key={key} data-aos="zoom-in" onClick={clickHandler(key)} className="productcard-container">
+            <div key={key} /* data-aos="zoom-in"  */onClick={clickHandler(key)} className="productcard-container">
                 <ProductCard
                     key={item.id}
                     {...item}

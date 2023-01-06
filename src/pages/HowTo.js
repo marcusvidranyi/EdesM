@@ -17,7 +17,7 @@ export function HowTo() {
 
                         Egyedi és formatortáknál kép küldése szükséges, mely lehet akár az internetről letöltött, illetve a galériából választott torta képe.
                         Válasz 24 órán belül várható a pontos árral és a megvalósíthatósággal kapcsolatban. Amennyiben árajánlatot kell kérni beszállítóktól (egyedi virág, egyedi figura, stb.) az ő visszaigazolásuk után tudunk csak válaszolni. A speciális díszítő elemeket a beszállítók 1-2 hétre szokták vállalni.
-                        Ostyaképes, fényképes torta rendelése: fénykép küldése email-ben az edesmdesszert@gmail.com illetve messengeren https://www.facebook.com/EdesMDesszertmuhely az átvételi dátum előtt minimum 5 nappal. A kiválasztott kép minősége minimum 1920x1080 pixel. Méret, iz és átvétel napjának egyeztetése a fenti elérhetőségek egyikén történik.
+                        Ostyaképes, fényképes torta rendelése: fénykép küldése email-ben az <a href="mailto:edesmdesszert@gmail.com">edesmdesszert@gmail.com</a> illetve <a href="https://www.facebook.com/EdesMDesszertmuhely">messengeren</a> az átvételi dátum előtt minimum 5 nappal. A kiválasztott kép minősége minimum 1920x1080 pixel. Méret, iz és átvétel napjának egyeztetése a fenti elérhetőségek egyikén történik.
                     </p>
                     <h3>Fizetési feltételek</h3>
                     <p> Egyedi és esküvői torta rendelése esetén megrendeléskor 50% foglaló fizetendő, a fennmaradó összeg   átvétel előtt átutalással vagy az átvétel  napján, készpénzben fizetendő.
