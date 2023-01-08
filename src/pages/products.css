@@ -128,13 +128,13 @@
 /* SCROLL ANIMATION */
 
 @media only screen and (max-width: 700px) {
-    * {
+    /* * {
         -webkit-transition: none !important;
         -moz-transition: none !important;
         -o-transition: none !important;
         -ms-transition: none !important;
         transition: none !important;
-    }
+    } */
     
     .productcard {
         margin: 1vh;

@@ -18,25 +18,33 @@
 .contact_boxes {
     display: flex;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 10%;
     background-color: black;
 }
 
 .contact_box_left,
 .contact_box_right {
     border: 3px solid #A8894A;
-    width: 30em;
-    height: 45em;
+    width: 30%;
+    height: 100%;
     margin: 0 5% 0 5%;
     border-radius: 20px;
     text-align: center;
     color: #A8894A;
+    overflow: hidden;
 
 
 }
 
 .contact_box_left {
     padding: 2%;
+}
+
+#gmap_canvas {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+
 }
 
 /* CONTACT FORM */
@@ -53,7 +61,8 @@
     height: auto;
 
 }
-.contact_form > label {
+
+.contact_form>label {
     margin: 0.8vw 0 0 0;
 }
 
@@ -74,7 +83,7 @@ textarea {
 }
 
 .contact_form>textarea {
-    height: 12em;
+    height: 150px;
 }
 
 .contact_form_submitbutton {
@@ -93,9 +102,7 @@ textarea {
 }
 
 /* //////////////////////////// */
-.contact_box_right {
-    overflow: hidden;
-}
+
 
 .edesm-logo {
     height: auto;
@@ -104,7 +111,7 @@ textarea {
 
 .footer_line {
     background-color: #A8894A;
-    width: 65em;
+    width: 80%;
     height: 3px;
 
 }
@@ -179,7 +186,56 @@ textarea {
 
 }
 
-#gmap_canvas {
-    height: 45em;
-    width: 100%;
+
+
+@media screen and (max-width: 768px) {
+    .contact_boxes {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+    .contact_box_left {
+        width: 80%;
+        height: 550px;
+
+    }
+
+    .contact_box_right {
+        width: 80%;
+        height: 50%;
+    }
+
+    .contact_form>textarea {
+        height: 40px;
+    }
+
+    .footer_faq_link,
+    .footer_howto_link {
+        font-size: 13px;
+        padding: 2px;
+        align-self: center;
+    }
+
+    .aos-animate {
+
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
 }

@@ -45,3 +45,22 @@ p > a {
     border: 2px solid #FFFF;
     transition: all 0.2s linear;
 }
+
+@media screen and (max-width: 768px) { 
+
+    .how-to {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/howto_background.jpg");
+        background-size: cover;
+    }
+
+    .howto_text {
+        padding-top: 20%;
+        padding: 10%;
+        text-shadow: 0px 1px 2px #46381e;
+        max-width: 100%;
+    }
+
+    .back_button_howto {
+        width: 50%;
+    }
+}
