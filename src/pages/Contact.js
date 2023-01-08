@@ -33,6 +33,7 @@ export function Contact() {
             });
     };
 
+
     return (
         <>
             <div className="contact" id="contact">
@@ -57,7 +58,7 @@ export function Contact() {
                     </div>
                     <div className="contact_box_right">
 
-                        <div><div><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2431%20Perk%C3%A1ta%20D%C3%B3zsa%20Gy%C3%B6rgy%20utca%2022&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe></div></div>
+                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2431%20Perk%C3%A1ta%20D%C3%B3zsa%20Gy%C3%B6rgy%20utca%2022&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
 
 
                     </div>

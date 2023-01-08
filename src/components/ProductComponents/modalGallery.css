@@ -102,6 +102,7 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     padding: 1vw;
     border: 3px solid #A8894A;
     border-radius: 15px;
+    
 }
 
 .title_and_close {

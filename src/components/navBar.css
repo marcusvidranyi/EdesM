@@ -60,6 +60,7 @@
     width: 220px;
     cursor: pointer;
     transition: all .3s linear;
+    
 }
 
 .nav_scrolled {
@@ -71,7 +72,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     font-size: 1.5em;
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 1),
@@ -111,13 +112,13 @@
 
 @media only screen and (max-width: 700px) {
 
-    * {
+    /* * {
         -webkit-transition: none !important;
         -moz-transition: none !important;
         -o-transition: none !important;
         -ms-transition: none !important;
         transition: none !important;
-       }
+       } */
 
     .navbar,
     .extra-navbar,
@@ -133,6 +134,10 @@
         padding-top: 10vh;
         padding-bottom: 0;
         /* font-size: 1.5em; */
+    }
+
+    .nav_scrolled {
+        background-image: none;
     }
 
     .nav_scrolled > li {
@@ -151,6 +156,9 @@
     
     #edesm_logo, #edesm_logo_scrolled {
         width: 300px;
+    }
+    .extra-navbar {
+        display: none;
     }
     
 
