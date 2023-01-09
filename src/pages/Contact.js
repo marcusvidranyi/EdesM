@@ -37,6 +37,7 @@ export function Contact() {
     return (
         <>
             <div className="contact" id="contact">
+                <div className="linear_gradient"></div>
                 <div className="contact_boxes" data-aos="fade-up">
                     <div className="contact_box_left">
                         <img src={edesm_logo} alt="edesm-logo" className="edesm-logo" />
