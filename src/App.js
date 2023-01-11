@@ -7,12 +7,36 @@ import { Faq } from "./pages/Faq";
 import { HowTo } from "./pages/HowTo";
 import { NavBar } from "./components/NavBar";
 import { FrontPage } from "./pages/FrontPage";
+import { useState, useEffect } from "react";
+import edesm_logo from "./images/edesm_logo.svg";
 
 
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(false);
+
+
+
+
+
+    useEffect(() => {
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2600)
+    }, [])
+
   return (
     <>
+    {isLoading &&
+                <div className="loading_box">
+                  <div className='spinner-box'>
+                    <div className='circle-box'>
+                      <div className='circle-core'></div>
+                    </div>
+                  </div>
+                    <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img></div>}
       {/* <Main />
       <Products />
       <AboutUs />

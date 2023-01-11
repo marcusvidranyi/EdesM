@@ -31,7 +31,6 @@ export function ImageSlider({ slides }) {
         left: "32px",
         fontSize: "45px",
         color: "#fff",
-        zIndex: 999999,
         cursor: "pointer",
     }
     const rightArrowStyles = {
@@ -41,7 +40,6 @@ export function ImageSlider({ slides }) {
         right: "32px",
         fontSize: "45px",
         color: "#fff",
-        zIndex: 999999,
         cursor: "pointer",
     }
 
