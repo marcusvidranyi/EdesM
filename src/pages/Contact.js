@@ -73,7 +73,7 @@ export function Contact() {
                         <Link to="/faq" className="footer_faq_link">
                             Gyakran ismételt kérdések
                         </Link>
-                        <div>
+                        <div className="toTheTopWrapper">
                             <FontAwesomeIcon icon={faCircleUp} className="tothetopbutton" onClick={clickToTheTop} />
                         </div>
                         <Link to="/howto" className="footer_howto_link">

@@ -10,18 +10,7 @@ import "./frontPage.css";
 
 export function FrontPage() {
 
-    /* const [isLoading, setIsLoading] = useState(true);
-
-
-
-
-
-    useEffect(() => {
-        setIsLoading(true);
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 3500)
-    }, []) */
+    
 
 
 
@@ -29,9 +18,6 @@ export function FrontPage() {
 
     return (
         <>
-            {/* {isLoading &&
-                <div className="loading_box">
-                    <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img></div>} */}
             <NavBar />
             <Main />
             <Products />

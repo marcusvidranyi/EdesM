@@ -20,27 +20,26 @@ function App() {
 
 
 
-    useEffect(() => {
-        setIsLoading(true);
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 2600)
-    }, [])
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2600)
+    return () => {
+      setIsLoading(false);
+    }
+  }, [])
 
   return (
     <>
-    {isLoading &&
-                <div className="loading_box">
-                  <div className='spinner-box'>
-                    <div className='circle-box'>
-                      <div className='circle-core'></div>
-                    </div>
-                  </div>
-                    <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img></div>}
-      {/* <Main />
-      <Products />
-      <AboutUs />
-      <Contact /> */}
+      {isLoading &&
+        <div className="loading_box">
+          <div className='spinner-box'>
+            <div className='circle-box'>
+              <div className='circle-core'></div>
+            </div>
+          </div>
+          <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img></div>}
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/main" element={<Main />} />
