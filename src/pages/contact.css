@@ -209,7 +209,7 @@ textarea {
     box-shadow: 0 0 5px 5px #A8894A !important;
     border-radius: 100%;
     transition: all 0.2s linear;
-    background-color: #524221;
+    background: #524221;
     border-radius: 25px;
     overflow: hidden;
 

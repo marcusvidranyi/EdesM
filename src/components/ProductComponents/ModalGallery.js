@@ -7,22 +7,24 @@ import {
     faCircleXmark
 } from "@fortawesome/free-solid-svg-icons";
 
-export function ModalGallery({ modalImages }) {
+export function ModalGallery({ modalImages, onClose }) {
 
 
     const [slideNumber, setSlideNumber] = useState(0);
-    const [openModal, setOpenModal] = useState(false);
-
+    const [secondOpenModal, setSecondOpenModal] = useState(false);
 
     const handleOpenModal = (index) => {
         setSlideNumber(index);
-        setOpenModal(true);
+        setSecondOpenModal(true);
+
+
     }
 
     const handleCloseModal = (event) => {
-        setOpenModal(false)
+        setSecondOpenModal(false)
 
     }
+    console.log(secondOpenModal)
     const prevSlide = () => {
         slideNumber === 0 ? setSlideNumber(modalImages.length - 1) : setSlideNumber(slideNumber - 1)
     }
@@ -43,12 +45,26 @@ export function ModalGallery({ modalImages }) {
                 handleCloseModal();
                 break;
         };
-    }
+    };
+
     useEffect(() => {
         document.addEventListener('keydown', detectKeydown)
         return () => document.removeEventListener('keydown', detectKeydown)
 
     });
+
+    const detectKeydownModal = (event) => {
+        if ((event.key === "Escape") && (!secondOpenModal)) {
+            onClose(false);
+            console.log("FIRE")
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('keydown', detectKeydownModal)
+        return () => document.removeEventListener('keydown', detectKeydownModal)
+
+    }, [secondOpenModal]);
 
 
     /* CLOSING MODAL TO OUTSIDE CLICK */
@@ -65,16 +81,17 @@ export function ModalGallery({ modalImages }) {
             handleCloseModal();
         }
 
-    }
+    };
+
     useEffect(() => {
         document.addEventListener("click", handleClickOutside, true)
         return () => document.removeEventListener('click', handleClickOutside)
-    }, [openModal]);
+    }, [secondOpenModal]);
 
     return (
         <>
             {
-                openModal &&
+                secondOpenModal &&
                 <div className="sliderWrap">
                     <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={handleCloseModal} />
                     <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} ref={refTwo} />
@@ -100,7 +117,6 @@ export function ModalGallery({ modalImages }) {
                                             effect="blur"
                                             className="actual_images"
                                             alt="cake images"
-
                                         />
                                     </div>
                                     {/* <div className="text">Lorem</div> */}

@@ -12,7 +12,7 @@ body {
 
 .loading_box {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     background-color: rgb(0, 0, 0);
     color: #ffff;
     height: 100vh;
@@ -23,7 +23,7 @@ body {
 }
 
 .edesm-logo-loading {
-    z-index: 2;
+    z-index: 5;
     height: 300px;
     -webkit-animation-name: spinner; 
     -webkit-animation-timing-function: linear; 
