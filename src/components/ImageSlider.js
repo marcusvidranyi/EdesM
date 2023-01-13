@@ -46,7 +46,7 @@ export function ImageSlider({ slides }) {
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? slides.length -1 : currentIndex -1;
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
 
@@ -56,18 +56,26 @@ export function ImageSlider({ slides }) {
         setCurrentIndex(newIndex);
     }, [currentIndex, slides]);
 
-    useEffect(() => {
-        if(timerRef.current) {
-            clearTimeout(timerRef.current)
-        }
-        console.log("use effect");
-        timerRef.current = setTimeout(() => {
-            goToNext();
-        }, 3500);
 
-        return () => clearTimeout(timerRef.current)
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (timerRef.current) {
+                clearTimeout(timerRef.current)
+            }
+            console.log("use effect");
+            timerRef.current = setTimeout(() => {
+                goToNext();
+            }, 3500);
+
+            return () => clearTimeout(timerRef.current);
+
+        }, 4000);
 
     }, [goToNext]);
+
+
 
 
     return (

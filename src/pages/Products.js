@@ -2,7 +2,7 @@ import "./products.css";
 import { ProductCard } from "../components/ProductComponents/ProductCard";
 import { ProductModal } from "../components/ProductComponents/ProductModal";
 import productsData from "../data/productsData";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faEnvelope
@@ -39,23 +39,8 @@ export function Products() {
         )
     });
 
-    /* CLOSING MODAL TO OUTSIDE CLICK */
+    
 
-    const refCloseModal = useRef(null);
-
-    /* const handleClickOutsideModal = event => {
-        if (!refCloseModal.current?.contains(event.target)) {
-            setOpenModal(false)
-            console.log("handleClickOutsideModal")
-        }
-
-    }
-    useEffect(() => {
-        document.addEventListener("click", handleClickOutsideModal, true)
-        return () => document.removeEventListener("click", handleClickOutsideModal, false)
-    }) */
-
-    /* SCROLL ANIMATION */
 
     useEffect(() => {
         Aos.init({duration: 2000});
@@ -82,13 +67,14 @@ export function Products() {
                 <div className="products" >
                     {cards}
                 </div>
-                <div className="product_modal" ref={refCloseModal}>
+                <div className="product_modal">
                     <ProductModal
                         open={openModal}
                         onClose={() => { setOpenModal(false) }}
                         title={productsData[modalKey].title}
                         image={productsData[modalKey].modalImg}
-                        propsKey={modalKey} />
+                        propsKey={modalKey}
+                         />
                 </div>
             </div>
         </div>
