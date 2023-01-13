@@ -1,48 +1,33 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import "./imageSlider.css"
 
 
 export function ImageSlider({ slides }) {
 
-    const timerRef = useRef(null);
+    const images = slides.map((image, index) => {
+        return image.slider_image
+    });
+
+    const slidePresentationTime = 4000
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+
+    useEffect(() => {
+        const sliderInterval = setInterval(() => {
+            setCurrentSlide((currentSlide + 1) % images.length);
+        }, slidePresentationTime);
+
+        return () => {
+            clearInterval(sliderInterval)
+        }
+    });
+
+
+    /* IMAGE SLIDER WITH LEFT AND RIGHT ARROW, AUTOSLIDE */
+
+    /* const timerRef = useRef(null);
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    const sliderStyles = {
-        height: "100%",
-        position: "relative",
-    }
-    const slideStyle = {
-        color: "white",
-        width: "100%",
-        height: "100%",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundImage:
-            slides && `url(${slides[currentIndex].slider_image})`,
-    }
-    const leftArrowStyles = {
-        position: "absolute",
-        top: "50%",
-        transform: "translate(0, -50%)",
-        left: "32px",
-        fontSize: "45px",
-        color: "#fff",
-        cursor: "pointer",
-        zIndex: 3,
-        opacity: "0.5",
-    }
-    const rightArrowStyles = {
-        position: "absolute",
-        top: "50%",
-        transform: "translate(0, -50%)",
-        right: "32px",
-        fontSize: "45px",
-        color: "#fff",
-        cursor: "pointer",
-        zIndex: 3,
-        opacity: "0.5",
-    }
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
@@ -54,35 +39,65 @@ export function ImageSlider({ slides }) {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
-    }, [currentIndex, slides]);
+    }, [currentIndex, slides]); */
 
 
 
 
-    useEffect(() => {
-        setTimeout(() => {
-            if (timerRef.current) {
-                clearTimeout(timerRef.current)
-            }
-            console.log("use effect");
-            timerRef.current = setTimeout(() => {
-                goToNext();
-            }, 3500);
 
-            return () => clearTimeout(timerRef.current);
+    /*  useEffect(() => {
+         setTimeout(() => {
+             if (timerRef.current) {
+                 clearTimeout(timerRef.current)
+             }
+             console.log("use effect");
+             timerRef.current = setTimeout(() => {
+                 goToNext();
+             }, 3500);
+ 
+             return () => clearTimeout(timerRef.current);
+ 
+         }, 4000);
+ 
+     }, [goToNext]);
+  */
 
-        }, 4000);
-
-    }, [goToNext]);
 
 
-
+    /* return (
+        <div className="slider_styles">
+            <div onClick={goToPrevious} className="left_arrow_styles">{"<"}</div>
+            <div onClick={goToNext} className="right_arrow_styles">{">"}</div>
+            <div style={{ backgroundImage: slides && `url(${slides[currentIndex].slider_image})` }} className="slide_styles"></div>
+        </div>
+    ) */
+    /* return (
+        <div className="slider_styles">
+            <div onClick={goToPrevious} className="left_arrow_styles">{"<"}</div>
+            <div onClick={goToNext} className="right_arrow_styles">{">"}</div>
+            <div style={{ backgroundImage: slides && `url(${slides[currentIndex].slider_image})` }} className="slide_styles"></div>
+        </div>
+    ) */
 
     return (
-        <div style={sliderStyles}>
-            <div style={leftArrowStyles} onClick={goToPrevious}>{"<"}</div>
-            <div style={rightArrowStyles} onClick={goToNext}>{">"}</div>
-            <div style={slideStyle}></div>
+        <div className="image_slider_box">
+            <div className="image_slider_content">
+                <div>
+                    {images.map((image, index) => (
+                        <img
+                            id={index}
+                            key={index}
+                            className={index === currentSlide ? 'image_slider_image active' : 'image_slider_image'}
+                            src={image}
+                            /* style={{
+                                zIndex: `-${index + 1}`
+                            }} */
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
-    )
+    );
+
+
 }

@@ -15,16 +15,21 @@ import edesm_logo from "./images/edesm_logo.svg";
 function App() {
 
   const [isLoading, setIsLoading] = useState(false);
-
+  
   useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2600)
-    return () => {
-      setIsLoading(false);
+    if (document.readyState === 'interactive') {
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2600)
+      return () => {
+        setIsLoading(false);
+      }
     }
-  }, [])
+
+
+  }, []);
+
 
   return (
     <>
@@ -35,7 +40,8 @@ function App() {
               <div className='circle-core'></div>
             </div>
           </div>
-          <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img></div>}
+          <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img>
+        </div>}
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/main" element={<Main />} />

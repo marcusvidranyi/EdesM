@@ -11,11 +11,17 @@
 
 }
 
+.order-now {
+    font-size: x-large;
+}
+
 .main-email {
     text-decoration: none;
     color: #A8894A;
+    font-size: x-large;
 
 }
+
 
 .products {
     width: 1400px;
@@ -74,7 +80,7 @@
 }
 
 .between_main_and_products_container {
-    padding-top: 5%;
+    padding-top: 10%;
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -113,6 +119,15 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .order-now {
+        font-size: smaller;
+    }
+
+    .main-email {
+        font-size: small;
+    }
+    
     
     .between_main_and_products_container {
         padding-bottom: 15%;

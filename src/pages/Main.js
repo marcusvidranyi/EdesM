@@ -1,7 +1,11 @@
 import "./main.css";
 import sliderImages from "../data/sliderImages";
 import { ImageSlider } from "../components/ImageSlider";
+
+
+
 export function Main() {
+
 
 
 
@@ -15,7 +19,7 @@ export function Main() {
             <div className="image_slider">
                 <ImageSlider slides={sliderImages} />
             </div>
-
+            <div className="golden_line"></div>
         </div>
     )
 }
