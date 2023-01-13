@@ -26,8 +26,9 @@
 .firstbox {
 
     border-style: solid;
-    border-width: 0 3px 0 0;
+    border-width: 0 2px 0 0;
     border-image: linear-gradient(to bottom, #FFFF 50%, #A8894A 40%)1;
+    box-shadow: 15px 0 15px -15px rgb(0, 0, 0);
     width: 15%;
     height: 50vh;
 
@@ -42,10 +43,6 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-
-    /* display: flex;
-    align-items: center;
-    flex-wrap: wrap; */
 
 }
 

@@ -8,12 +8,6 @@ import "./frontPage.css";
 
 export function FrontPage() {
 
-    
-
-
-
-
-
     return (
         <>
             <NavBar />
