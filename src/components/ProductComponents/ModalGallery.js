@@ -6,6 +6,8 @@ import {
     faCircleChevronRight,
     faCircleXmark
 } from "@fortawesome/free-solid-svg-icons";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import placeholderedesm from "../../images/placeholderedesm.png"
 
 export function ModalGallery({ modalImages, onClose }) {
 
@@ -18,19 +20,19 @@ export function ModalGallery({ modalImages, onClose }) {
         setSecondOpenModal(true);
 
 
-    }
+    };
 
     const handleCloseModal = (event) => {
         setSecondOpenModal(false)
 
-    }
-    console.log(secondOpenModal)
+    };
+    
     const prevSlide = () => {
         slideNumber === 0 ? setSlideNumber(modalImages.length - 1) : setSlideNumber(slideNumber - 1)
-    }
+    };
     const nextSlide = () => {
         slideNumber + 1 === modalImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1)
-    }
+    };
 
 
     const detectKeydown = (event) => {
@@ -57,7 +59,7 @@ export function ModalGallery({ modalImages, onClose }) {
         if ((event.key === "Escape") && (!secondOpenModal)) {
             onClose(false);
             console.log("FIRE")
-        }
+        };
     };
 
     useEffect(() => {
@@ -111,12 +113,14 @@ export function ModalGallery({ modalImages, onClose }) {
                             >
                                 <div className="gallery_item">
                                     <div className="image">
-                                        <img
-                                            src={slide.cake_img}
-                                            loading="lazy"
+                                        <LazyLoadImage
                                             effect="blur"
+                                            src={slide.cake_img}
+                                            width="100%"
+                                            height="100%"
                                             className="actual_images"
-                                            alt="cake images"
+                                            alt="cake image"
+                                            placeholderSrc={placeholderedesm}
                                         />
                                     </div>
                                     {/* <div className="text">Lorem</div> */}

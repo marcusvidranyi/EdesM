@@ -20,7 +20,7 @@ export function ImageSlider({ slides }) {
         return () => {
             clearInterval(sliderInterval)
         }
-    });
+    }, [currentSlide]);
 
 
     /* IMAGE SLIDER WITH LEFT AND RIGHT ARROW, AUTOSLIDE */
