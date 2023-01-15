@@ -48,12 +48,14 @@ export function Contact() {
                         <a href="mailto:edesmdesszert@gmail.com" className='main-email'>Email: edesmdesszert@gmail.com</a>
                         <h3 style={{ color: "#FFFF" }}>Kérjük, hagyjon üzenetet!</h3>
                         <form ref={form} onSubmit={sendEmail} className="contact_form">
-                            <label>Név:</label>
-                            <input type="text" name="user_name" />
-                            <label>Email:</label>
-                            <input type="email" name="user_email" />
-                            <label>Üzenet:</label>
-                            <textarea name="message" />
+
+                            <input type="text" name="user_name" placeholder="Az Ön neve" required />
+
+                            <input type="email" name="user_email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}" placeholder="Az Ön e-mail címe" required />
+
+                            <input type="tel" name="user_phone" placeholder="Az Ön telefonszáma (opcionális)" />
+
+                            <textarea name="message" placeholder="Az Ön üzenete" />
                             <input type="submit" value="Elküld" className="contact_form_submitbutton" />
                         </form>
                     </div>

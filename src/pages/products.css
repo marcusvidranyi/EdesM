@@ -22,15 +22,40 @@
 
 }
 
+/* email hover effect */
+
+.main-email {
+    position: relative;
+
+}
+
+.main-email::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    background-color: #A8894A;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+
+}
+
+.main-email:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+
+}
+
+/* ///////// */
 
 .products {
-    width: 1400px;
-    max-height: 35vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5%;
     background-color: black;
 
 
@@ -91,8 +116,8 @@
     padding: 40px 0 0 20px;
     height: 100px;
     background: linear-gradient(hsl(0 0% 0% / 0),
-    hsl(20 0% 0% /0.3) 20%,
-    hsl(0 0% 0% / 1))
+            hsl(20 0% 0% /0.3) 20%,
+            hsl(0 0% 0% / 1))
 }
 
 /* PRODUCT MODAL */
@@ -107,6 +132,8 @@
 }
 
 .product_overlay {
+    display: flex;
+    justify-content: center;
     background-color: black;
     width: 100%;
     height: 100%;
@@ -115,7 +142,7 @@
 .product_modal_container {
     width: 80vw;
     height: 80vh;
-    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -127,22 +154,25 @@
     .main-email {
         font-size: small;
     }
-    
-    
+
+
     .between_main_and_products_container {
         padding-bottom: 15%;
     }
+
     .card_content {
         text-align: center;
         display: flex;
         align-items: center;
-        padding: 20px;
-        height: 50px;
+        /* padding: 20px; */
+        height: 100%;
     }
-}
-/* SCROLL ANIMATION */
 
-@media only screen and (max-width: 700px) {
+
+
+    /* SCROLL ANIMATION */
+
+
     /* * {
         -webkit-transition: none !important;
         -moz-transition: none !important;
@@ -150,22 +180,32 @@
         -ms-transition: none !important;
         transition: none !important;
     } */
-    
-    .productcard {
-        margin: 1vh;
-        padding: 0;
-        width: 45vw;
-        height: 30%;
-        color: #FFFF;
-        border: 3px solid #A8894A;
-        background-color: black;
-        overflow: hidden;
-        background-position: -10px -160px;
-        
-        
-    }
-    
+
     .products {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+
     }
+
+    .productcard {
+        padding: 0;
+        width: 300px;
+        height: 50px;
+        color: #FFFF;
+        border: 1px solid #A8894A;
+        background-position: center;
+        padding: 0px;
+        overflow: hidden;
+
+
+    }
+
+    .card_content {
+        padding: 0;
+        height: 100%;
+        background: none;
+        display: flex;
+        justify-content: center;
+    }
+
 }
