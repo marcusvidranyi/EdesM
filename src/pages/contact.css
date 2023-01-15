@@ -38,6 +38,7 @@
 .contact_box_right {
     border: 3px solid #A8894A;
     width: 30%;
+    min-height: 70vh;
     margin: 5% 5% 0 5%;
     border-radius: 20px;
     text-align: center;
@@ -54,6 +55,7 @@
 
 .contact_box_left {
     padding: 2%;
+    height: auto;
 
 }
 
@@ -241,7 +243,11 @@ textarea {
 
     .contact_box_right {
         width: 80%;
-        height: 50%;
+        min-height: 0;
+    }
+
+    #gmap_canvas {
+        height: 300px;
     }
 
     .contact_form>input,
