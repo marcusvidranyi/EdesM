@@ -30,7 +30,7 @@ export function Products() {
     const cards = productsData.map(item => {
         const key = item.id
         return (
-            <div key={key} /* data-aos="zoom-in"  */onClick={clickHandler(key)} className="productcard-container">
+            <div key={key} /* data-aos="zoom-in"  */ onClick={clickHandler(key)} className="productcard-container">
                 <ProductCard
                     key={item.id}
                     {...item}
@@ -39,28 +39,32 @@ export function Products() {
         )
     });
 
-    
+
 
 
     useEffect(() => {
-        Aos.init({duration: 2000});
+        Aos.init({ duration: 2000 });
     }, [])
 
     Aos.init({
-        disable: function() {
-          var maxWidth = 800;
-          return window.innerWidth < maxWidth;
+        disable: function () {
+            var maxWidth = 800;
+            return window.innerWidth < maxWidth;
         }
-      });
+    });
 
     return (
         <div className="products_container" id="products">
             <div className="between_main_and_products_container" data-aos="fade-up">
                 <span className="order-now">RENDELJEN MOST:</span>
                 <span style={{ color: "#A8894A" }}>
-                    <FontAwesomeIcon icon={faEnvelope} className="main-mail-icon" onClick={clickHandlerMailto} />
-                    <a href="mailto:edesmdesszert@gmail.com" className='main-email'>edesmdesszert@gmail.com</a>
-                    
+                    <FontAwesomeIcon
+                        icon={faEnvelope}
+                        className="main-mail-icon"
+                        onClick={clickHandlerMailto} />
+                    <a
+                        href="mailto:edesmdesszert@gmail.com"
+                        className='main-email'>edesmdesszert@gmail.com</a>
                 </span>
             </div>
             <div className="product_categry_container">
@@ -74,7 +78,7 @@ export function Products() {
                         title={productsData[modalKey].title}
                         image={productsData[modalKey].modalImg}
                         propsKey={modalKey}
-                         />
+                    />
                 </div>
             </div>
         </div>

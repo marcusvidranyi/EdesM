@@ -1,13 +1,45 @@
 import { ExtraNavBar } from "../components/ExtraNavBar";
 import { useNavigate } from "react-router-dom";
-import "./howTo.css"
+import { useState, useEffect } from "react";
+import "./howTo.css";
+import edesm_logo from "../images/edesm_logo.svg";
+
 export function HowTo() {
 
 
     const navigate = useNavigate();
 
+    const [isLoading, setIsLoading] = useState(false);
+
+    useEffect(() => {
+
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1500)
+        return () => {
+            setIsLoading(false);
+        }
+
+
+
+    }, [HowTo]);
+
     return (
         <>
+            {isLoading &&
+                <div className="loading_box">
+                    <div className='spinner-box'>
+                        <div className='circle-box'>
+                            <div className='circle-core'></div>
+                        </div>
+                    </div>
+                    <img
+                        src={edesm_logo}
+                        alt="edesm-logo-loading"
+                        className="edesm-logo-loading">
+                    </img>
+                </div>}
             <ExtraNavBar />
             <div className="how-to">
                 <div className="howto_text">
@@ -25,9 +57,9 @@ export function HowTo() {
                     </p>
                     <div className="back_button_howto" onClick={() => navigate(-1)}>vissza a Főoldalra</div>
                 </div>
-                
+
             </div>
-            
+
         </>
     )
 }
