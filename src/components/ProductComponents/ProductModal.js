@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import "./modalGallery.css";
 
-export function ProductModal({ title, open, onClose, image, propsKey }) {
+export function ProductModal({ title, open, onClose, /* image, */ propsKey }) {
 
     const refCloseModal = useRef(null);
 
