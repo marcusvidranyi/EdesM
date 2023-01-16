@@ -76,7 +76,7 @@ export function Products() {
                         open={openModal}
                         onClose={() => { setOpenModal(false) }}
                         title={productsData[modalKey].title}
-                        image={productsData[modalKey].modalImg}
+                        /* image={productsData[modalKey].modalImg} */
                         propsKey={modalKey}
                     />
                 </div>
