@@ -19,7 +19,7 @@ export function ProductCard(props) {
             }}>
             {/* <img src={props.coverImg} className="product_category_images"></img> */}
             <div className="card_content">
-                <p className="productcard_title" >{props.title}</p>
+                <p className="productcard_title" >{props.title.toUpperCase()}</p>
             </div>
         </div>
     )
