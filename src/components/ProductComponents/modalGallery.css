@@ -23,7 +23,7 @@
     justify-content: center;
     grid-template-columns: repeat(4, 2fr);
     grid-auto-rows: 10.5vw 10.5vw;
-    grid-gap: 20px;
+    grid-gap: 15px;
     margin: 2em 0 2em 0;
 
 }
@@ -93,6 +93,8 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     height: 75vh;
     border: 3px solid #A8894A;
     border-radius: 15px;
+    background-image: url("../../images/gold3.jpg");
+    background-position: bottom;
     box-shadow: 0px 32px 15px 19px rgba(0, 0, 0, 0.9);
 
 }
@@ -116,7 +118,7 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 
 .gallery_modal_close {
     margin-top: 1vh;
-    font-size: xxx-large;
+    font-size: 28px;
     cursor: pointer;
     opacity: 0.6;
     color: #fff;
@@ -216,21 +218,21 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 .sliderWrap .btnClose {
     top: 40px;
     right: 40px;
-    font-size: xxx-large;
+    font-size: 28px;
 }
 
 .sliderWrap .btnPrev {
     top: 50%;
     transform: translateY(-50%);
     left: 40px;
-    font-size: xxx-large;
+    font-size: 28px;
 }
 
 .sliderWrap .btnNext {
     top: 50%;
     transform: translateY(-50%);
     right: 40px;
-    font-size: xxx-large;
+    font-size: 28px;
 }
 
 .fullScreenImage {

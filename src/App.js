@@ -8,7 +8,7 @@ import { HowTo } from "./pages/HowTo";
 import { NavBar } from "./components/NavBar";
 import { FrontPage } from "./pages/FrontPage";
 import { useState, useEffect } from "react";
-import edesm_logo from "./images/edesm_logo.svg";
+import edesm_logo from "./images/edesm_logo.png";
 
 
 
