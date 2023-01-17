@@ -43,6 +43,7 @@
        d="m 297.638,47.8134 a 117.638,60.9451 0 0 1 117.638,60.945 117.638,60.9451 0 1 1 -117.638,-60.945 z" />
     <path
        id="path8"
+
        style="fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.7087;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
        d="M 297.638,60.5693 A 104.8821,48.1891 0 0 1 402.52,108.7584 104.8821,48.1891 0 1 1 297.638,60.5693 Z" />
     <g
@@ -55,6 +56,8 @@
          id="text14"
          y="120.0535"
          x="307.0249"
+         
+         
          >
         <tspan
            style="fill:#ffffff;font-style: Parisienne"

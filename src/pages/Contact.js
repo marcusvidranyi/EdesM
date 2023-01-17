@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./contact.css";
-import edesm_logo from "../images/edesm_logo.svg";
+import edesm_logo from "../images/edesm_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCircleUp
@@ -45,7 +45,7 @@ export function Contact() {
                         <p style={{ color: "#FFFF" }}>ÉdesM Desszertműhely</p>
                         <p>2431 Perkáta, Dózsa György utca 22.</p>
                         <p style={{ color: "#FFFF" }}>Telefon: 06501332553, 06703240377</p>
-                        <a href="mailto:edesmdesszert@gmail.com" className='main-email'>Email: edesmdesszert@gmail.com</a>
+                        <a href="mailto:edesmdesszert@gmail.com" className='main-email' style={{ color: "#FFFF" }}>Email: edesmdesszert@gmail.com</a>
                         <h3 style={{ color: "#FFFF" }}>Kérjük, hagyjon üzenetet!</h3>
                         <form ref={form} onSubmit={sendEmail} className="contact_form">
 

@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import { useScrollPosition } from "../hooks/useScrollPosition";
-import edesm_logo from "../images/edesm_logo.svg";
+import edesm_logo from "../images/edesm_logo_svg.svg";
 import "./navBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -52,7 +52,7 @@ export function NavBar() {
                     <Link to="contact"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={20}
                         duration={500}>Elérhetősé<span className="lastletter">G</span></Link>
                 </li>
             </ul>
