@@ -25,14 +25,14 @@ export function NavBar() {
                         to="main"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={0}
                         duration={500}>Főolda<span className="lastletter">L</span></Link>
                 </li>
                 <li className="navbar-items">
                     <Link to="products"
                         spy={true}
                         smooth={true}
-                        offset={-50}
+                        offset={0}
                         duration={500}>Kínálatun<span className="lastletter">K</span></Link>
                 </li>
                 <img src={edesm_logo}
@@ -52,7 +52,7 @@ export function NavBar() {
                     <Link to="contact"
                         spy={true}
                         smooth={true}
-                        offset={20}
+                        offset={-50}
                         duration={500}>Elérhetősé<span className="lastletter">G</span></Link>
                 </li>
             </ul>

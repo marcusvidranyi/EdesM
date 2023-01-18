@@ -62,8 +62,10 @@
 }
 
 .productcard {
-    width: 470px;
+    width: 460px;
     height: 170px;
+    /* width: 130%;
+    height: 170px; */
     color: white;
     border: 1px solid #A8894A;
     margin: 10px 10px 10px 10px;
@@ -110,7 +112,7 @@
 }
 
 .between_main_and_products_container {
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     gap: 5%;

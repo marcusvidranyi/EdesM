@@ -1,7 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-scroll";
 import "./navBar.css";
-import edesm_logo from "../images/edesm_logo.png";
+import edesm_logo from "../images/edesm_logo_svg.svg";
 export function ExtraNavBar() {
 
     function GoToHomePage() {
