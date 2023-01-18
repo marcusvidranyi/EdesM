@@ -37,7 +37,7 @@ export function Contact() {
     return (
         <>
             <div className="contact" id="contact">
-                <div className="linear_gradient"></div>
+                <div className="linear_gradient_contact_page"></div>
                 <div className="contact_boxes" data-aos="fade-up">
                     <div className="contact_box_left">
                         <img src={edesm_logo} alt="edesm-logo" className="edesm-logo" />
@@ -68,21 +68,27 @@ export function Contact() {
 
                 </div>
                 <div className="footer_box">
-                    <div className="footer_line_box">
-                        <div className="footer_line"></div>
-                    </div>
                     <div className="footer_links">
                         <Link to="/faq" className="footer_faq_link">
-                            Gyakran ismételt kérdések
+                            GYAKRAN ISMÉTELT KÉRDÉSEK
                         </Link>
-                        <div className="toTheTopWrapper">
-                            <FontAwesomeIcon icon={faCircleUp} className="tothetopbutton" onClick={clickToTheTop} />
-                        </div>
                         <Link to="/howto" className="footer_howto_link">
-                            Rendelés menete
+                            RENDELÉS MENETE
+                        </Link>
+                        <Link to="/aszf" className="footer_aszf_link">
+                            ÁSZF
+                        </Link>
+                        <Link to="/partners" className="footer_partners_link">
+                            PARTNEREK
                         </Link>
                     </div>
 
+                    <div className="footer_line_box">
+                        <div className="footer_line"></div>
+                    </div>
+                        <div className="toTheTopWrapper">
+                            <FontAwesomeIcon icon={faCircleUp} className="tothetopbutton" onClick={clickToTheTop} />
+                        </div>
                 </div>
 
             </div>

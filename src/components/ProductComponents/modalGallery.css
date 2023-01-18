@@ -111,7 +111,7 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     border: 3px solid #A8894A;
     border-radius: 15px;
     padding: 1%;
-    margin-top: 4%;
+    /* margin-top: 4%; */
 }
 
 .gallery_modal_close {
@@ -148,8 +148,8 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 
 ::-webkit-scrollbar-track {
     background: #A8894A;
-    border-radius: 100vw;
-    margin-block: .5em;
+    border-radius: 15px;
+    /* margin-block: .5em; */
 }
 
 .product_modal_container::-webkit-scrollbar-track {
