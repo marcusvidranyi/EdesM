@@ -52,7 +52,7 @@ export function NavBar() {
                     <Link to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-50}
+                        offset={0}
                         duration={500}>Elérhetősé<span className="lastletter">G</span></Link>
                 </li>
             </ul>

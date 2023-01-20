@@ -68,7 +68,7 @@ export function Products() {
                 </span>
             </div>
             <div className="product_categry_container">
-                <div className="products" >
+                <div className="products" data-aos="fade-up">
                     {cards}
                 </div>
                 <div className="product_modal">
