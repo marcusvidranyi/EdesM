@@ -41,11 +41,13 @@
     width: 20%;
     text-align: center;
     transition: all 0.2s linear;
+    
 }
 
 .back_button_faq:hover {
     border: 2px solid #FFFF;
     transition: all 0.2s linear;
+    box-shadow: 0 0 5px 5px #A8894A !important;
 }
 
 @media screen and (max-width: 768px) {
