@@ -124,6 +124,7 @@ export function Contact() {
 
                 {/* FOOTER */}
 
+
                 <div className="footer_box">
                     <div className="footer_links">
                         <Link to="/faq" className="footer_faq_link">
@@ -132,6 +133,9 @@ export function Contact() {
                         <Link to="/aszf" className="footer_aszf_link">
                             ÁSZF
                         </Link>
+                        <div className="toTheTopWrapper">
+                            <FontAwesomeIcon icon={faCircleUp} className="tothetopbutton" onClick={clickToTheTop} />
+                        </div>
                         <Link to="/howto" className="footer_howto_link">
                             RENDELÉS MENETE
                         </Link>
@@ -143,11 +147,8 @@ export function Contact() {
                     <div className="footer_line_box">
                         <div className="footer_line"></div>
                     </div>
-                    <div className="toTheTopWrapper">
-                        <FontAwesomeIcon icon={faCircleUp} className="tothetopbutton" onClick={clickToTheTop} />
-                    </div>
-                </div>
 
+                </div>
             </div>
         </>
     )
