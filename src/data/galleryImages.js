@@ -406,46 +406,101 @@ export default [
             cake_img: require('../images/cakes/IMG_20200626_204642.jpg')
 
         },
+        {
+            id: 82,
+            cake_img: require('../images/cakes/IMG_20220126_153856.jpg')
+
+        },
+        {
+            id: 83,
+            cake_img: require('../images/cakes/IMG_20220401_174257.jpg')
+
+        },
+        {
+            id: 84,
+            cake_img: require('../images/cakes/IMG_20220407_090639.jpg')
+
+        },
+        {
+            id: 85,
+            cake_img: require('../images/cakes/IMG_20201128_060009.jpg')
+
+        },
+        {
+            id: 86,
+            cake_img: require('../images/cakes/IMG_20201207_151017.jpg')
+
+        },
+        {
+            id: 87,
+            cake_img: require('../images/cakes/IMG_20201207_151319.jpg')
+
+        },
+        {
+            id: 88,
+            cake_img: require('../images/cakes/IMG_20201211_080842.jpg')
+
+        },
+        {
+            id: 89,
+            cake_img: require('../images/cakes/IMG_20201220_075012.jpg')
+
+        },
+        {
+            id: 90,
+            cake_img: require('../images/cakes/IMG_20201225_135834.jpg')
+
+        },
     ],
     [
         {
             id: 1,
-            cake_img: 'https://unsplash.it/600/300?image=1'
+            cake_img: require('../images/classics/Dobos torta.jpg')
 
         },
         {
             id: 2,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074315.jpg')
+            cake_img: require('../images/classics/Eszterházy torta.jpg')
 
         },
         {
             id: 3,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074507.jpg')
+            cake_img: require('../images/classics/Feketeerdő torta.jpg')
 
         },
         {
             id: 4,
-            cake_img: require('../images/wedding_cakes/IMG_20220129_125204.jpg')
+            cake_img: require('../images/classics/gyümölcs torta.jpg')
 
         },
         {
             id: 5,
-            cake_img: require('../images/wedding_cakes/IMG_20220606_094538.jpg')
+            cake_img: require('../images/classics/IMG_20210414_181232.jpg')
 
         },
         {
             id: 6,
-            cake_img: require('../images/wedding_cakes/IMG_20220730_120132.jpg')
+            cake_img: require('../images/classics/IMG_20220701_133046.jpg')
 
         },
         {
             id: 7,
-            cake_img: require('../images/wedding_cakes/IMG_20220805_193907.jpg')
+            cake_img: require('../images/classics/IMG_20220708_140728.jpg')
 
         },
         {
             id: 8,
-            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+            cake_img: require('../images/classics/IMG_20221208_124657_resized_20230114_071139368.jpg')
+
+        },
+        {
+            id: 9,
+            cake_img: require('../images/classics/IMG_20221209_135237_resized_20230114_071142440.jpg')
+
+        },
+        {
+            id: 10,
+            cake_img: require('../images/classics/oroszkrém torta.jpg')
 
         },
     ],
@@ -1032,90 +1087,201 @@ export default [
             cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
 
         },
-    ],
-    [
         {
-            id: 1,
-            cake_img: require('../images/wedding_cakes/IMG_20210407_090101.jpg')
+            id: 9,
+            cake_img: require('../images/wedding_cakes/házassági évforduló.jpg')
 
         },
         {
-            id: 2,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074315.jpg')
-
-        },
-        {
-            id: 3,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074507.jpg')
-
-        },
-        {
-            id: 4,
-            cake_img: require('../images/wedding_cakes/IMG_20220129_125204.jpg')
-
-        },
-        {
-            id: 5,
-            cake_img: require('../images/wedding_cakes/IMG_20220606_094538.jpg')
-
-        },
-        {
-            id: 6,
-            cake_img: require('../images/wedding_cakes/IMG_20220730_120132.jpg')
-
-        },
-        {
-            id: 7,
-            cake_img: require('../images/wedding_cakes/IMG_20220805_193907.jpg')
-
-        },
-        {
-            id: 8,
-            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+            id: 10,
+            cake_img: require('../images/wedding_cakes/házassági évfordulós.jpg')
 
         },
     ],
     [
         {
             id: 1,
-            cake_img: require('../images/wedding_cakes/IMG_20210407_090101.jpg')
+            cake_img: require('../images/bonbons/bonbon1.jpg')
 
         },
         {
             id: 2,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074315.jpg')
+            cake_img: require('../images/bonbons/bonbon2.jpg')
 
         },
         {
             id: 3,
-            cake_img: require('../images/wedding_cakes/IMG_20210819_074507.jpg')
+            cake_img: require('../images/bonbons/csokoládé desszertek.jpg')
 
         },
         {
             id: 4,
-            cake_img: require('../images/wedding_cakes/IMG_20220129_125204.jpg')
+            cake_img: require('../images/bonbons/csokoládé desszertek2.jpg')
 
         },
         {
             id: 5,
-            cake_img: require('../images/wedding_cakes/IMG_20220606_094538.jpg')
+            cake_img: require('../images/bonbons/IMG_20220120_190320.jpg')
 
         },
         {
             id: 6,
-            cake_img: require('../images/wedding_cakes/IMG_20220730_120132.jpg')
+            cake_img: require('../images/bonbons/IMG_20220418_092045.jpg')
 
         },
         {
             id: 7,
-            cake_img: require('../images/wedding_cakes/IMG_20220805_193907.jpg')
+            cake_img: require('../images/bonbons/IMG_20220426_155239.jpg')
 
         },
         {
             id: 8,
-            cake_img: require('../images/wedding_cakes/IMG_20220909_102755.jpg')
+            cake_img: require('../images/bonbons/IMG_20220426_155310.jpg')
 
         },
+        {
+            id: 9,
+            cake_img: require('../images/bonbons/IMG_20220426_155317.jpg')
+
+        },
+        {
+            id: 10,
+            cake_img: require('../images/bonbons/IMG_20220426_155324.jpg')
+
+        },
+        {
+            id: 11,
+            cake_img: require('../images/bonbons/IMG_20220418_092030.jpg')
+
+        },
+    ],
+    [
+        {
+            id: 1,
+            cake_img: require('../images/desserts/319331065_569064938444061_7041365258458857386_n.jpg')
+
+        },
+        {
+            id: 2,
+            cake_img: require('../images/desserts/320673916_542369894515990_1584463719968201243_n.jpg')
+
+        },
+        {
+            id: 3,
+            cake_img: require('../images/desserts/320692213_1361846814566912_6350477130049641304_n.jpg')
+
+        },
+        {
+            id: 4,
+            cake_img: require('../images/desserts/320736374_900563880973606_5102944647138263270_n.jpg')
+
+        },
+        {
+            id: 5,
+            cake_img: require('../images/desserts/320920117_1690768218417197_4999327438167329210_n.jpg')
+
+        },
+        {
+            id: 6,
+            cake_img: require('../images/desserts/320977513_470411161973569_2861705945143506383_n.jpg')
+
+        },
+        {
+            id: 7,
+            cake_img: require('../images/desserts/321240787_1563225627482315_81465037390845411_n.jpg')
+
+        },
+        {
+            id: 8,
+            cake_img: require('../images/desserts/324828276_923936148767331_6575189742329300662_n.jpg')
+
+        },
+        {
+            id: 9,
+            cake_img: require('../images/desserts/325150314_3477954819106681_5717529670236439474_n.jpg')
+
+        },
+        {
+            id: 10,
+            cake_img: require('../images/desserts/325150314_6504511459563784_7083556574201451257_n.jpg')
+
+        },
+        {
+            id: 11,
+            cake_img: require('../images/desserts/325179248_496651015929246_9004244833458486048_n.jpg')
+
+        },
+        {
+            id: 12,
+            cake_img: require('../images/desserts/325442705_729687531792429_319055971458430421_n.jpg')
+
+        },
+        {
+            id: 13,
+            cake_img: require('../images/desserts/325453341_919903652500277_1271822390566419787_n.jpg')
+
+        },
+        {
+            id: 14,
+            cake_img: require('../images/desserts/325464745_1073988180658558_452249825248513071_n.jpg')
+
+        },
+        {
+            id: 15,
+            cake_img: require('../images/desserts/325473137_719904556312086_1030090217407569625_n.jpg')
+
+        },
+        {
+            id: 16,
+            cake_img: require('../images/desserts/325475927_1581284842285563_4210855857753721268_n.jpg')
+
+        },
+        {
+            id: 17,
+            cake_img: require('../images/desserts/325479444_3328296244153587_491008868074320008_n.jpg')
+
+        },
+        {
+            id: 18,
+            cake_img: require('../images/desserts/325481357_838287677244195_6045360245142949427_n.jpg')
+
+        },
+        {
+            id: 19,
+            cake_img: require('../images/desserts/325505602_746471920336660_7658956117114834610_n.jpg')
+
+        },
+        {
+            id: 20,
+            cake_img: require('../images/desserts/325512924_871087584214533_1094599023685613253_n.jpg')
+
+        },
+        {
+            id: 21,
+            cake_img: require('../images/desserts/325526688_861516235074145_2966599403682986013_n.jpg')
+
+        },
+        {
+            id: 22,
+            cake_img: require('../images/desserts/325598198_943076263264166_3779796078902941806_n.jpg')
+
+        },
+        {
+            id: 23,
+            cake_img: require('../images/desserts/325635020_486068150378652_261409709705533974_n.jpg')
+
+        },
+        {
+            id: 24,
+            cake_img: require('../images/desserts/IMG_20220506_095903.jpg')
+
+        },
+        {
+            id: 25,
+            cake_img: require('../images/desserts/IMG_20220611_071123.jpg')
+
+        },
+        
     ],
     [
         {

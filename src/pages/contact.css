@@ -6,9 +6,8 @@
 
 #contact {
     background-image: url("../images/dark-bronze-stone-background.jpg");
-    /* max-width: 100%; */
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -348,42 +347,45 @@
 
 
 @media screen and (max-width: 768px) {
+    .contact_box_left,
+    .contact_box_second,
+    .contact_box_map {
+        margin: 0;
+        padding: 0;
+    }
+    
     .contact_boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "contact"
+        "map";
+        grid-gap: 50px;
+        padding: 10px 20px 10px 20px;
+    }
+
+
+    .contact_form .row50 {
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
     }
 
 
-    .contact_box_left {
-        width: 80%;
-        height: 550px;
 
+    .inputBox {
+        width: 100%;
     }
 
-    .contact_box_right {
-        width: 80%;
-        min-height: 0;
+    /* FOOTER */
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
     }
 
-    #gmap_canvas {
-        height: 300px;
-    }
-
-    .contact_form>input,
-    textarea {
-        font-size: small;
-    }
-
-    .contact_form>textarea {
-        height: 40px;
-    }
-
-    .footer_faq_link,
-    .footer_howto_link {
-        font-size: 13px;
-        padding: 2px;
-        align-self: center;
+    .toTheTopWrapper {
+        position: absolute;
     }
 
     .aos-animate {
