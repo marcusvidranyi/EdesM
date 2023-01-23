@@ -89,9 +89,9 @@ export function ImageSlider({ slides }) {
                             key={index}
                             className={index === currentSlide ? 'image_slider_image active' : 'image_slider_image'}
                             src={image}
-                            /* style={{
+                            style={{
                                 zIndex: `-${index + 1}`
-                            }} */
+                            }}
                         />
                     ))}
                 </div>
