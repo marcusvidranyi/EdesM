@@ -6,7 +6,7 @@ export default [
         },
         {
             id:2,
-            slider_image: require('../images/image_slider/ALD_9864.jpg')
+            slider_image: require('../images/image_slider/320920117_1690768218417197_4999327438167329210_n.jpg')
         },
         {
             id:3,
@@ -48,5 +48,10 @@ export default [
             id:12,
             slider_image: require('../images/image_slider/ALD_9877.jpg')
         },
+        {
+            id:13,
+            slider_image: require('../images/image_slider/ALD_9864.jpg')
+        },
+    
     
 ]
