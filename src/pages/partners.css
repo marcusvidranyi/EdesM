@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.partners {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.6)), url("../images/duncan-kidd-qSPxjNn7Uy8-unsplash.png");
+    background-size: 100%;
+    background-position: center;
+    color: #FFFF;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom -700px right 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

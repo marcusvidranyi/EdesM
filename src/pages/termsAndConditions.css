@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.termsAndConditions {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.7)), url("../images/david-holifield-9pUZ5UdOMNw-unsplash.png");
+    background-size: 100%;
+    background-position: center;
+    color: #FFFF;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

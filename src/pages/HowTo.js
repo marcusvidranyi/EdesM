@@ -2,7 +2,7 @@ import { ExtraNavBar } from "../components/ExtraNavBar";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./howTo.css";
-import edesm_logo from "../images/edesm_logo.png";
+import edesm_logo from "../images/edesm_logo_svg.svg";
 
 export function HowTo() {
 

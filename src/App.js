@@ -5,43 +5,43 @@ import { AboutUs } from "./pages/AboutUs";
 import { Contact } from "./pages/Contact";
 import { Faq } from "./pages/Faq";
 import { HowTo } from "./pages/HowTo";
+import { Partners } from "./pages/Partners";
+import { TermsAndConditions } from "./pages/TermsAndConditions";
 import { NavBar } from "./components/NavBar";
 import { FrontPage } from "./pages/FrontPage";
 import { useState, useEffect } from "react";
-import edesm_logo from "./images/edesm_logo.png";
+
+
 
 
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(false);
-  
+  const [isLoading, setIsLoading] = useState(true);
+
+
+
+  function someRequest() {
+    return new Promise(resolve => setTimeout(() => resolve(), 2500));
+  }
+
   useEffect(() => {
-    if (document.readyState === 'interactive') {
-      setIsLoading(true);
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000)
-      return () => {
-        setIsLoading(false);
+    someRequest().then(() => {
+      const loaderElement = document.querySelector(".loading_box");
+      if (loaderElement) {
+        loaderElement.remove();
+        setIsLoading(!isLoading);
       }
-    }
-
-
+    });
   }, []);
+
+  if (isLoading) {
+    return null;
+  }
 
 
   return (
     <>
-      {isLoading &&
-        <div className="loading_box">
-          <div className='spinner-box'>
-            <div className='circle-box'>
-              <div className='circle-core'></div>
-            </div>
-          </div>
-          <img src={edesm_logo} alt="edesm-logo-loading" className="edesm-logo-loading"></img>
-        </div>}
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/main" element={<Main />} />
@@ -50,6 +50,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/howto" element={<HowTo />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/termsandconditions" element={<TermsAndConditions />} />
       </Routes>
     </>
   );
