@@ -130,7 +130,7 @@ export function Contact() {
                         <Link to="/faq" className="footer_faq_link">
                             GYAKRAN ISMÉTELT KÉRDÉSEK
                         </Link>
-                        <Link to="/aszf" className="footer_aszf_link">
+                        <Link to="/termsandconditions" className="footer_aszf_link">
                             ÁSZF
                         </Link>
                         <div className="toTheTopWrapper">
