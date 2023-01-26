@@ -3,7 +3,9 @@ export default [
     [
         {
             id: 1,
-            cake_img: require('../images/cakes/FB_IMG_1613247161294.jpg')
+            cake_img: require('../images/cakes/IMG_20220611_100317.jpg'),
+            text: "A Szent Korona"
+            
 
         },
         {
@@ -298,7 +300,7 @@ export default [
         },
         {
             id: 60,
-            cake_img: require('../images/cakes/IMG_20220611_100317.jpg')
+            cake_img: require('../images/cakes/FB_IMG_1613247161294.jpg')
 
         },
         {
@@ -507,38 +509,45 @@ export default [
     [
         {
             id: 1,
-            cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg')
+            cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg'),
+            text: "Boldogasszony csipkéje"
             
 
         },
         {
             id: 2,
-            cake_img: require('../images/best_of_cakes/Huncut szilvaherceg.jpg')
+            cake_img: require('../images/best_of_cakes/Huncut szilvaherceg.jpg'),
+            text: "Huncut szilvaherceg"
 
         },
         {
             id: 3,
-            cake_img: require('../images/best_of_cakes/Milotai mézes.jpg')
+            cake_img: require('../images/best_of_cakes/Milotai mézes.jpg'),
+            text: "Milotai mézes"
 
         },
         {
             id: 4,
-            cake_img: require('../images/best_of_cakes/Nagyi kedvence.jpg')
+            cake_img: require('../images/best_of_cakes/Nagyi kedvence.jpg'),
+            text: "Nagyi kedvence"
 
         },
         {
             id: 5,
-            cake_img: require('../images/best_of_cakes/Őrség zöld aranya.jpg')
+            cake_img: require('../images/best_of_cakes/Őrség zöld aranya.jpg'),
+            text: "Őrség zöld aranya"
 
         },
         {
             id: 6,
-            cake_img: require('../images/best_of_cakes/Pándi meggy torta.jpg')
+            cake_img: require('../images/best_of_cakes/Pándi meggy torta.jpg'),
+            text: "Pándi meggy torta"
 
         },
         {
             id: 7,
-            cake_img: require('../images/best_of_cakes/Szatmári szilvatorta.jpg')
+            cake_img: require('../images/best_of_cakes/Szatmári szilvatorta.jpg'),
+            text: "Szatmári szilvatorta"
 
         },
     ],

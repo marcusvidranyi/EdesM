@@ -57,6 +57,10 @@
     margin: 1%;
 }
 
+.inputBox > textarea {
+    font-size: 28px;
+}
+
 .contact_box_left h2 {
     display: block;
     font-size: 24px;
@@ -235,7 +239,7 @@
 .inputBox textarea {
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1em;
+    font-size: 24px;
     outline: none;
     border: 1px solid #836A39;
     resize: none;
@@ -332,7 +336,7 @@
     font-size: 250%;
     color: #836A39;
     cursor: pointer;
-    margin: 5px 1vw 0 1vw;
+    margin: 0 1vw 0 1vw;
     transition: all 0.2s linear;
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 51%, #836A39 53%);
     border-radius: 50%;
@@ -349,6 +353,12 @@
     border-radius: 25px;
     overflow: hidden;
 
+}
+
+.toTheTopWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

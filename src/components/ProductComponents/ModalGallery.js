@@ -89,6 +89,9 @@ export function ModalGallery({ modalImages, onClose }) {
         document.addEventListener("click", handleClickOutside, true)
         return () => document.removeEventListener('click', handleClickOutside)
     }, [secondOpenModal]);
+    
+
+
 
     return (
         <>
@@ -100,6 +103,8 @@ export function ModalGallery({ modalImages, onClose }) {
                     <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} ref={refThree} />
                     <div className="fullScreenImage" ref={refOne} >
                         <img src={modalImages[slideNumber].cake_img} alt="SliderImage" />
+                        <span className={modalImages[slideNumber].text ? "text" : ""} style={{fontSize: "24px"}}>{modalImages[slideNumber].text}</span>
+                        <span>{modalImages[slideNumber].id} / {modalImages.length}</span>
                     </div>
                 </div>
             }
@@ -123,7 +128,7 @@ export function ModalGallery({ modalImages, onClose }) {
                                             placeholderSrc={placeholderedesm}
                                         />
                                     </div>
-                                    {/* <div className="text">Lorem</div> */}
+                                    <div className={slide.text ? "text" : ""}>{slide.text}</div>
                                 </div>
                             </div>
                         )

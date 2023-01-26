@@ -31,7 +31,7 @@
 .gallery_item {
     width: 100%;
     height: 100%;
-    /* position: relative; */
+    position: relative;
 
 }
 
@@ -57,26 +57,46 @@
 /* PRODUCT MODAL ANIMATED TEXT
 bug with positioning of text, removing .gallery_item > position relative fixes it */
 
-/* .gallery_item .text {
+.gallery_item .text {
     opacity: 0;
     position: absolute;
-    top: 50%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
     pointer-events: none;
     z-index: 4;
     transition: .3s ease-in-out;
     -webkit-backdrop-filter: blur(5px) saturate(1.8);
     backdrop-filter: blur(5px) saturate(1.8);
+    border-radius: 15px;
+    width: 100%;
+    color: black;
 }
 
 .gallery_item:hover .text {
     opacity: 1;
-    animation: move-down .3s linear;
-    padding: 1em;
+    font-size: 23px;
+    animation: move_from_left .3s linear;
+    /* padding: 5px; */
+    color: black;
     width: 100%;
-} */
+    transition: .3s ease-in-out;
+
+}
+
+@keyframes move_from_left {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 35%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
 
 .image {
     border-radius: 10px;
@@ -166,19 +186,6 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     background: hsl(41, 38%, 13%);
 }
 
-@keyframes move-down {
-    0% {
-        top: 10%;
-    }
-
-    50% {
-        top: 35%;
-    }
-
-    100% {
-        top: 50%;
-    }
-}
 
 /* SLIDERWRAP */
 .sliderWrap {
@@ -237,29 +244,31 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     /* width: calc(100% - 40px);
     height: calc(100% -40px); */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .fullScreenImage img {
-    max-width: 100%;
-    max-height: 900px;
+    height: 85vh;
     pointer-events: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-/* .imageCounter {
-    top: 50%;
-    right: 30px;
-} */
+
+
 
 @media screen and (max-width: 768px) {
+    .fullScreenImage img {
+        height: 100%;
+        width: 100%;
+    }
 
     .galleryWrap {
         grid-template-columns: repeat(2, 4fr);
-        
+
         grid-auto-rows: 20.5vw 20.5vw;
         margin: 0;
         padding: 0;
