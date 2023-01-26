@@ -17,9 +17,8 @@ import { useState, useEffect } from "react";
 
 function App() {
 
+/* LOADING ANIMATION */
   const [isLoading, setIsLoading] = useState(true);
-
-
 
   function someRequest() {
     return new Promise(resolve => setTimeout(() => resolve(), 2500));
@@ -38,7 +37,7 @@ function App() {
   if (isLoading) {
     return null;
   }
-
+///////////////////////////
 
   return (
     <>
