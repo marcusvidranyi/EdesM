@@ -30,13 +30,13 @@
     border-image: linear-gradient(to bottom, #FFFF 50%, #A8894A 40%)1;
     box-shadow: 15px 0 15px -15px rgb(0, 0, 0);
     width: 15%;
-    height: 50%;
+    height: 500px
 
 }
 
 .secondbox {
     color: #FFFF;
-    font-size: large;
+    font-size: 20px;
     width: 15%;
     height: 50vh;
     margin-left: 15px;
@@ -44,6 +44,10 @@
     flex-wrap: wrap;
     align-content: center;
 
+}
+
+.secondbox p {
+    margin: 1vh 10px 1vh 10px
 }
 
 @media screen and (max-width: 768px) {
@@ -67,6 +71,7 @@
     .secondbox {
         width: 60%;
         height: auto;
+        font-size: large;
         /* text-shadow: 1px 1px 2px black, 0 0 1em #fff, 0 0 0.2em #A8894A; */
     }
 }
