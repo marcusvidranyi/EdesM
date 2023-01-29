@@ -103,7 +103,7 @@ export function Contact() {
                                 <a href="tel:+36703240377" style={{ color: "#FFFF" }}>Telefon: +36501332553, +36703240377</a>
                             </div>
                             <ul className="social_media_links">
-                                <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                                <li><a href="https://www.facebook.com/EdesMDesszertmuhely"><FontAwesomeIcon icon={faFacebook} /></a></li>
                                 <li><a href="#"><FontAwesomeIcon icon={faFacebookMessenger} /></a></li>
                                 <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
                                 <li><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
