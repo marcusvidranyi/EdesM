@@ -54,7 +54,7 @@ export function Products() {
     });
 
     return (
-        <div className="products_container" id="products">
+        <div className={openModal ? "products_container_ifModalIsOpen" : "products_container"} id="products">
             <div className="between_main_and_products_container" data-aos="fade-up">
                 <span className="order-now">RENDELJEN MOST:</span>
                 <span style={{ color: "#A8894A" }}>

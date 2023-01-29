@@ -128,7 +128,7 @@ export function ModalGallery({ modalImages, onClose }) {
                                             placeholderSrc={placeholderedesm}
                                         />
                                     </div>
-                                    <div /* className={slide.text ? "text" : ""} */>{slide.text}</div>
+                                    <div /* className={slide.text ? "text" : ""} */ className="modalgalleryText">{slide.text}</div>
                                 </div>
                             </div>
                         )

@@ -106,6 +106,13 @@
 
 }
 
+.products_container_ifModalIsOpen {
+    background-color: black;
+    color: white;
+    padding-bottom: 20vh;
+    background-size: 100%;
+}
+
 .product_categry_container {
     display: flex;
     justify-content: center;
@@ -124,7 +131,7 @@
     /* height: 100%; */
     font-size: 20px;
     text-align: center;
-    
+
     /* text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
 	  -3px 0px 7px rgba(81,67,21,0.8), 
 	  0px 4px 7px rgba(81,67,21,0.8); */
@@ -142,11 +149,14 @@
 }
 
 .product_overlay {
+
     display: flex;
     justify-content: center;
     background-color: black;
     width: 100%;
     height: 100%;
+    margin-top: 50px;
+
 }
 
 .product_modal_container {
@@ -155,7 +165,97 @@
 
 }
 
+@media screen and (max-width: 1465px) {
+    .card_content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        /* padding: 20px; */
+        height: 100%;
+    }
+
+    .products_container {
+        background-color: black;
+        color: white;
+        padding-bottom: 0;
+        background-size: 100%;
+    
+    
+    }
+
+    /* SCROLL ANIMATION */
+
+
+    /* * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    } */
+
+    .products {
+        display: grid;
+
+
+    }
+
+    .productcard {
+        padding: 0;
+        width: 300px;
+        height: 100px;
+        color: #FFFF;
+        border: 1px solid #A8894A;
+        background-position: center;
+        padding: 0px;
+        overflow: hidden;
+
+
+    }
+
+    .card_content {
+        padding: 0;
+        height: 100%;
+        background: none;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 997px) {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5%;
+        background-color: black;
+
+
+    }
+
+    .product_overlay {
+        margin-top: 30px;
+    }
+
+}
+
+
 @media screen and (max-width: 768px) {
+
+    .products_container {
+        background-color: black;
+        color: white;
+        padding-bottom: 20vh;
+        background-size: 100%;
+    
+    
+    }
+
+    .product_overlay {
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+
 
     .order-now {
         font-size: smaller;
