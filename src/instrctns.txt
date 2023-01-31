@@ -1,7 +1,0 @@
-1. products_container padding-bottom: 0;
-
-2..about_us paddint-top: 0%;
-
-3. .product_modal_container z-index: 1;
-
-4. .fullScreenImage img z-index: 3;
