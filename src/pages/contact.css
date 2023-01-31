@@ -393,37 +393,32 @@
     align-items: center;
 }
 
-@media screen and (max-height: 1000px) {
-    #contact {
-        height: auto;
-    }
-}
 
 @media screen and (max-width: 1275px) {
     #contact {
         height: auto;
     }
-
+    
     .contact_box_left,
     .contact_box_second,
     .contact_box_map {
         margin: 0;
         padding: 0;
     }
-
+    
     .contact_boxes {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-            "form"
-            "contact"
-            "map";
+        "form"
+        "contact"
+        "map";
         grid-gap: 50px;
         padding: 10px 20px 40px 20px;
-
+        
     }
-
+    
     .contact_box_second {
         display: flex;
         flex-direction: column;
@@ -432,15 +427,9 @@
     
     .social_media_links {
         justify-content: center;
+        margin-bottom: 15px;
     }
     
-    
-    /* .contact_form .row50 {
-        flex-direction: column;
-    } */
-}
-
-@media screen and (max-width: 1281px) {
     .footer_faq_link,
     .footer_howto_link,
     .footer_aszf_link,
@@ -459,7 +448,16 @@
         cursor: pointer;
         transition: all 0.2s linear;
     }
+    
+    /* .contact_form .row50 {
+        flex-direction: column;
+    } */
+}
 
+@media screen and (max-height: 1000px) {
+    #contact {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -19,14 +19,21 @@ export function ModalGallery({ modalImages, onClose }) {
         setSlideNumber(index);
         setSecondOpenModal(true);
 
-
+        /* Prevent Scrolling if modal is open */
+        if (typeof window != 'undefined' && window.document) {
+            document.body.style.overflow = 'hidden';
+        }
+        
     };
 
     const handleCloseModal = (event) => {
-        setSecondOpenModal(false)
+        setSecondOpenModal(false);
+
+        /* Unset background scrolling if modal is closed */
+        document.body.style.overflow = 'unset';
 
     };
-    
+
     const prevSlide = () => {
         slideNumber === 0 ? setSlideNumber(modalImages.length - 1) : setSlideNumber(slideNumber - 1)
     };
@@ -89,8 +96,38 @@ export function ModalGallery({ modalImages, onClose }) {
         document.addEventListener("click", handleClickOutside, true)
         return () => document.removeEventListener('click', handleClickOutside)
     }, [secondOpenModal]);
-    
 
+
+
+    /* MOBILE SWIPE FUNCTION */
+
+    const [touchPosition, setTouchPosition] = useState(null)
+
+    const handleTouchStart = (event) => {
+        const touchDown = event.touches[0].clientX
+        setTouchPosition(touchDown)
+    }
+
+    const handleTouchMove = (event) => {
+        const touchDown = touchPosition
+
+        if (touchDown === null) {
+            return
+        }
+
+        const currentTouch = event.touches[0].clientX
+        const diff = touchDown - currentTouch
+
+        if (diff > 5) {
+            nextSlide();
+        }
+
+        if (diff < -5) {
+            prevSlide();
+        }
+
+        setTouchPosition(null)
+    }
 
 
     return (
@@ -101,9 +138,9 @@ export function ModalGallery({ modalImages, onClose }) {
                     <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={handleCloseModal} />
                     <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} ref={refTwo} />
                     <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} ref={refThree} />
-                    <div className="fullScreenImage" ref={refOne} >
+                    <div className="fullScreenImage" ref={refOne} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
                         <img src={modalImages[slideNumber].cake_img} alt="SliderImage" />
-                        <span className={modalImages[slideNumber].text ? "text" : ""} style={{fontSize: "24px"}}>{modalImages[slideNumber].text}</span>
+                        <span className={modalImages[slideNumber].text ? "text" : ""} style={{ fontSize: "24px" }}>{modalImages[slideNumber].text}</span>
                         <span>{modalImages[slideNumber].id} / {modalImages.length}</span>
                     </div>
                 </div>
