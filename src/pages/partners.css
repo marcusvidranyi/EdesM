@@ -6,7 +6,8 @@
 }
 
 .partners {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.6)), url("../images/duncan-kidd-qSPxjNn7Uy8-unsplash.png");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.6)), url("../images/duncan-kidd-qSPxjNn7Uy8-unsplash.png"); */
+
     background-size: 100%;
     background-position: center;
     color: #FFFF;
@@ -16,4 +17,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.partners_container {
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    color: rgb(0, 0, 0);
+
+}
+
+.partners_container_leftColumn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.partners_container_leftColumn h1 {
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.partners_container_leftColumn p {
+    margin: 5px 0px 0px 55px;
+}
+
+.mci {
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
