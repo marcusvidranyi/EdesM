@@ -80,7 +80,7 @@
         "form contact"
         "form map";
     grid-gap: 50px;
-    padding: 6% 10% 2% 10%;
+    padding: 3% 10% 2% 10%;
 
 
 }
@@ -391,6 +391,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.creator_contact {
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.creator_contact span, .creator_contact a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFF;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.creator_contact a {
+    position: relative;
+}
+
+.creator_contact a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+
+.creator_contact a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 

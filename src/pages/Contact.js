@@ -47,7 +47,7 @@ export function Contact() {
                         <form ref={form} onSubmit={sendEmail} className="contact_form">
                             <div className="row50">
                                 <div className="inputBox">
-                                    <span>Vezetéknék</span>
+                                    <span>Vezetéknév</span>
                                     <input type="text" name="last_name" placeholder="Kovács" required />
                                 </div>
                                 <div className="inputBox">
@@ -147,7 +147,9 @@ export function Contact() {
                     <div className="footer_line_box">
                         <div className="footer_line"></div>
                     </div>
-
+                    <div className="creator_contact">
+                        <span>Webfejlesztő: <a href="https://marcusvidranyi.com" className="">marcusvidranyi.com</a></span>
+                    </div>
                 </div>
             </div>
         </>
