@@ -5,6 +5,7 @@
 
 }
 
+
 .partners {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.6)), url("../images/duncan-kidd-qSPxjNn7Uy8-unsplash.png"); */
 
@@ -13,36 +14,68 @@
     color: #FFFF;
     height: 100vh;
     background-size: cover;
-    background-position: bottom -700px right 0px;
+    background-position: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+
 .partners_container {
-    height: 80vh;
+    height: auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
     color: rgb(0, 0, 0);
 
+
 }
 
 .partners_container_leftColumn {
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    margin: 10%;
 }
 
 .partners_container_leftColumn h1 {
     font-weight: bolder;
-    margin-right: 20px;
+    margin-bottom: 15px;
+    /* margin-right: 20px; */
 }
 
 .partners_container_leftColumn p {
-    margin: 5px 0px 0px 55px;
+    /* margin: 5px 0px 0px 55px; */
+}
+
+.partners_section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 3%; */
+
+}
+
+.partners_logo_wrapper {
+    margin: 30px;
+}
+
+.partners_logo_wrapper p {
+    text-align: center;
+}
+
+.default_partner_logos {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 15%;
+    margin: 5%;
 }
 
 .mci {
@@ -50,4 +83,120 @@
     height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 5%;
+}
+
+.alena {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.hajnal_petra {
+    width: 200px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.irena {
+    width: 200px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.wolf_tamas {
+    width: 200px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.partners_back_button {
+    height: auto;
+    margin: 15px;
+    width: 200px;
+    
+}
+
+@media screen and (max-width: 1465px) {
+
+    html,
+    body {
+        background-color: #ffff !important;
+    }
+
+    .partners {
+        background-size: 100%;
+        background-position: center;
+        color: #FFFF;
+        height: 100%;
+        background-size: cover;
+        background-position: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFF;
+
+    }
+
+    .partners_container {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
+
+
+
+    }
+
+    .partners_section {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 3%; */
+
+    }
+
+    .partners_container_leftColumn {
+        width: 35%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+
+    .extranavbar_partners {
+        display: none;
+
+    }
+
+    .partners_container {
+        height: 80vh;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+    }
+
 }
