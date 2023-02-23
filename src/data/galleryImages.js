@@ -1,6 +1,6 @@
 export default [
 
-    [
+    [                                                                           /* FORMATORTÁK */
         {
             id: 1,
             cake_img: require('../images/cakes/IMG_20220611_100317.jpg'),
@@ -453,8 +453,38 @@ export default [
             cake_img: require('../images/cakes/IMG_20201225_135834.jpg')
 
         },
+        {
+            id: 91,
+            cake_img: require('../images/cakes/IMG_20230125_132142.jpg')
+
+        },
+        {
+            id: 92,
+            cake_img: require('../images/cakes/IMG_20230120_061600.jpg')
+
+        },
+        {
+            id: 93,
+            cake_img: require('../images/cakes/IMG_20230203_074015.jpg')
+
+        },
+        {
+            id: 94,
+            cake_img: require('../images/cakes/IMG_20230202_143127.jpg')
+
+        },
+        {
+            id: 95,
+            cake_img: require('../images/cakes/IMG_20230210_082656.jpg')
+
+        },
+        {
+            id: 96,
+            cake_img: require('../images/cakes/IMG_20230216_125326.jpg')
+
+        },
     ],
-    [
+    [                                                                           /* KLASSZIKUSOK */
         {
             id: 1,
             cake_img: require('../images/classics/Dobos torta.jpg')
@@ -505,8 +535,33 @@ export default [
             cake_img: require('../images/classics/oroszkrém torta.jpg')
 
         },
+        {
+            id: 11,
+            cake_img: require('../images/classics/IMG_20230121_122815.jpg')
+
+        },
+        {
+            id: 12,
+            cake_img: require('../images/classics/IMG_20230127_131800.jpg')
+
+        },
+        {
+            id: 13,
+            cake_img: require('../images/classics/IMG_20230210_151825.jpg')
+
+        },
+        {
+            id: 14,
+            cake_img: require('../images/classics/IMG_20230217_080319.jpg')
+
+        },
+        {
+            id: 15,
+            cake_img: require('../images/classics/IMG_20230218_082409.jpg')
+
+        },
     ],
-    [
+    [                                                                                 /* ORSZÁGTORTÁK */
         {
             id: 1,
             cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg'),
@@ -551,7 +606,7 @@ export default [
 
         },
     ],
-    [
+    [                                                                               /* GYEREKTORTÁK */
         {
             id: 1,
             cake_img: require('../images/children_cakes/FB_IMG_1594008939341.jpg')
@@ -992,8 +1047,38 @@ export default [
             cake_img: require('../images/children_cakes/IMG_20221105_115102.jpg')
 
         },
+        {
+            id: 89,
+            cake_img: require('../images/children_cakes/IMG_20230203_093510.jpg')
+
+        },
+        {
+            id: 90,
+            cake_img: require('../images/children_cakes/IMG_20230128_084630.jpg')
+
+        },
+        {
+            id: 91,
+            cake_img: require('../images/children_cakes/IMG_20230211_133235.jpg')
+
+        },
+        {
+            id: 92,
+            cake_img: require('../images/children_cakes/IMG_20230205_081459.jpg')
+
+        },
+        {
+            id: 93,
+            cake_img: require('../images/children_cakes/IMG_20230217_093036.jpg')
+
+        },
+        {
+            id: 94,
+            cake_img: require('../images/children_cakes/IMG_20230218_070620.jpg')
+
+        },
     ],
-    [
+    [                                                                              /* KERESZTELŐ TORTÁK */
         {
             id: 1,
             cake_img: require('../images/christening_cakes/IMG_20211106_064433.jpg')
@@ -1055,7 +1140,7 @@ export default [
 
         },
     ],
-    [
+    [                                                                          /* ESKÜVŐI TORTÁK */
         {
             id: 1,
             cake_img: require('../images/wedding_cakes/IMG_20210407_090101.jpg')
@@ -1107,7 +1192,7 @@ export default [
 
         },
     ],
-    [
+    [                                                                       /* BONBONOK */
         {
             id: 1,
             cake_img: require('../images/bonbons/bonbon1.jpg')
@@ -1164,7 +1249,7 @@ export default [
 
         },
     ],
-    [
+    [                                                                              /* DESSZERTEK */
         {
             id: 1,
             cake_img: require('../images/desserts/319331065_569064938444061_7041365258458857386_n.jpg')
@@ -1292,7 +1377,7 @@ export default [
         },
         
     ],
-    [
+    [                                                                               /* MOUSSE */
         {
             id: 1,
             cake_img: require('../images/mousse_cakes/IMG_20210723_121226.jpg')
@@ -1335,6 +1420,34 @@ export default [
         {
             id: 9,
             cake_img: require('../images/mousse_cakes/IMG_20220818_114108.jpg')
+        },
+        {
+            id: 9,
+            cake_img: require('../images/mousse_cakes/IMG_20230105_124542.jpg')
+        },
+        {
+            id: 10,
+            cake_img: require('../images/mousse_cakes/IMG_20230203_115648.jpg')
+        },
+        {
+            id: 11,
+            cake_img: require('../images/mousse_cakes/IMG_20230203_133023.jpg')
+        },
+        {
+            id: 12,
+            cake_img: require('../images/mousse_cakes/IMG_20230203_132918.jpg')
+        },
+        {
+            id: 13,
+            cake_img: require('../images/mousse_cakes/IMG_20230217_073253.jpg')
+        },
+        {
+            id: 14,
+            cake_img: require('../images/mousse_cakes/IMG_20230217_072734.jpg')
+        },
+        {
+            id: 15,
+            cake_img: require('../images/mousse_cakes/IMG_20230214_075152.jpg')
         },
         
     ]
