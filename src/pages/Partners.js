@@ -51,11 +51,11 @@ export const Partners = () => {
                     <div className="partners_container">
                         <div className="partners_container_leftColumn">
                             <h1>A legjobb partnerekkel dolgozom</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Morbi dictum dapibus urna, quis vehicula ante. Sed congue justo leo,
                                 quis molestie orci feugiat vel. Nullam id congue orci, ut auctor nibh.
                                 Sed massa nisl, accumsan sit amet nisi a, faucibus hendrerit sem.
-                                Donec auctor placerat cursus. Donec malesuada eu libero et efficitur.</p>
+                                Donec auctor placerat cursus. Donec malesuada eu libero et efficitur.</p> */}
                             <div className="back_button_howto partners_back_button" onClick={() => navigate(-1)}>vissza a Főoldalra</div>
                         </div>
 
