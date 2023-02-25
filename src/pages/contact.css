@@ -23,7 +23,7 @@
 
 
 .linear_gradient_contact_page {
-    height: 70px;
+    height: 80px;
     width: 100%;
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.9),
@@ -120,7 +120,6 @@
 
 .infobox div {
     display: flex;
-    
     margin-bottom: 10px;
 }
 
