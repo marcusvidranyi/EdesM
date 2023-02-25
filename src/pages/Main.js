@@ -11,7 +11,7 @@ export function Main() {
 
     const [cardActive, setCardActive] = useState("side_pop_up");
 
-    useEffect(() => {
+    /* useEffect(() => {
         setTimeout(() => {
             setCardActive("side_pop_up side_pop_up_active");
         }, 4000)
@@ -20,13 +20,13 @@ export function Main() {
 
     const closeNews = () => {
         setCardActive("side_pop_up")
-    }
+    } */
 
     return (
         <div className="main">
-            <div className={cardActive} >
+            {/* <div className={cardActive} >                               
                 <FontAwesomeIcon icon={faCircleXmark} className="closeNewsButton" onClick={closeNews}/>
-            </div>
+            </div> */}
             <div className="slideshow_overlay"></div>
             <div className="main-text-box">
                 <h2 className="main-text-top">TORTÁK</h2>
