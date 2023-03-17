@@ -5,13 +5,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUp, faLocationDot, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faFacebookMessenger, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 /* import facebook2 from "../images/icons/facebook2.png"; */
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import emailjs from '@emailjs/browser';
 
 
 export function Contact() {
+
+    const [lastName, setLastName] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
+    const [error, setError] = useState(false);
+
+
     const clickToTheTop = () => {
         var Scroll = require('react-scroll');
         var scroll = Scroll.animateScroll;
@@ -23,7 +30,11 @@ export function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_mcdyvhq', 'template_s106rl8', form.current, '5XkFYpvBwSaEXEGXt')
+        if (firstName.length == 0 || lastName.length == 0) {
+            setError(true)
+            return
+        }
+        emailjs.sendForm('service_mcdyvhq', 'ÉdesM Contact Form Messa', form.current, '5XkFYpvBwSaEXEGXt')
             .then((result) => {
                 console.log(result.text);
                 alert("üzenet elküldve!")
@@ -31,6 +42,7 @@ export function Contact() {
                 console.log(error.text);
                 alert("üzenetet nem sikerült elküldeni!")
             });
+        e.target.reset();
     };
 
 
@@ -48,17 +60,29 @@ export function Contact() {
                             <div className="row50">
                                 <div className="inputBox">
                                     <span>Vezetéknév</span>
-                                    <input type="text" name="last_name" placeholder="Kovács" required />
+                                    <input type="text" name="last_name" placeholder="Kovács" onChange={e => setLastName(e.target.value)} />
+                                    {error && lastName.length <= 0 ?
+                                        <span>Vezetéknevet nem hagyhatja üresen!</span> : ""}
                                 </div>
                                 <div className="inputBox">
                                     <span>Keresztnév</span>
-                                    <input type="text" name="first_name" placeholder="János" required />
+                                    <input type="text" name="first_name" placeholder="János" onChange={e => setFirstName(e.target.value)} />
+                                    {error && firstName.length <= 0 ?
+                                        <span>Keresztnevet nem hagyhatja üresen!</span> : ""}
                                 </div>
                             </div>
                             <div className="row50">
                                 <div className="inputBox">
                                     <span>Email</span>
-                                    <input type="email" name="user_email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}" placeholder="Az Ön e-mail címe" required />
+                                    <input
+                                        type="email"
+                                        name="user_email"
+                                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}"
+                                        placeholder="Az Ön e-mail címe"
+                                        onChange={e => setUserEmail(e.target.value)}
+                                    />
+                                    {error && firstName.length <= 0 ?
+                                        <span>Adjon meg egy érvényes E-mail címet!</span> : ""}
                                 </div>
                                 <div className="inputBox">
                                     <span>Telefon</span>
