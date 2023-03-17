@@ -62,13 +62,13 @@ export function Contact() {
                                     <span>Vezetéknév</span>
                                     <input type="text" name="last_name" placeholder="Kovács" onChange={e => setLastName(e.target.value)} />
                                     {error && lastName.length <= 0 ?
-                                        <span>Vezetéknevet nem hagyhatja üresen!</span> : ""}
+                                        <span>A vezetéknevet nem hagyhatja üresen!</span> : ""}
                                 </div>
                                 <div className="inputBox">
                                     <span>Keresztnév</span>
                                     <input type="text" name="first_name" placeholder="János" onChange={e => setFirstName(e.target.value)} />
                                     {error && firstName.length <= 0 ?
-                                        <span>Keresztnevet nem hagyhatja üresen!</span> : ""}
+                                        <span>A keresztnevet nem hagyhatja üresen!</span> : ""}
                                 </div>
                             </div>
                             <div className="row50">
