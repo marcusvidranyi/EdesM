@@ -81,7 +81,7 @@ export function Contact() {
                                         placeholder="Az Ön e-mail címe"
                                         onChange={e => setUserEmail(e.target.value)}
                                     />
-                                    {error && firstName.length <= 0 ?
+                                    {error && userEmail.length <= 0 ?
                                         <span>Adjon meg egy érvényes E-mail címet!</span> : ""}
                                 </div>
                                 <div className="inputBox">
