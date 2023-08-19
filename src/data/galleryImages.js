@@ -5,7 +5,7 @@ export default [
             id: 1,
             cake_img: require('../images/cakes/IMG_20220611_100317.jpg'),
             text: "A Szent Korona"
-            
+
 
         },
         {
@@ -561,46 +561,54 @@ export default [
 
         },
     ],
-    [                                                                                 /* ORSZÁGTORTÁK */
+    [                                     /*  ORSZÁGTORTÁK */
         {
             id: 1,
-            cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg'),
-            text: "Boldogasszony csipkéje"
-            
-
+            cake_img: require('../images/best_of_cakes/magyarorszag_tortaja_2023.jpg'),
+            text: "Országtorta 2023"
         },
         {
             id: 2,
+            cake_img: require('../images/best_of_cakes/magyarorszag_tortaja2_2023.jpg'),
+            text: "Spicces füge"
+        },
+        {
+            id: 3,
+            cake_img: require('../images/best_of_cakes/Boldogasszony csipkéje.jpg'),
+            text: "Boldogasszony csipkéje"
+        },
+        {
+            id: 4,
             cake_img: require('../images/best_of_cakes/Huncut szilvaherceg.jpg'),
             text: "Huncut szilvaherceg"
 
         },
         {
-            id: 3,
+            id: 5,
             cake_img: require('../images/best_of_cakes/Milotai mézes.jpg'),
             text: "Milotai mézes"
 
         },
         {
-            id: 4,
+            id: 6,
             cake_img: require('../images/best_of_cakes/Nagyi kedvence.jpg'),
             text: "Nagyi kedvence"
 
         },
         {
-            id: 5,
+            id: 7,
             cake_img: require('../images/best_of_cakes/Őrség zöld aranya.jpg'),
             text: "Őrség zöld aranya"
 
         },
         {
-            id: 6,
+            id: 8,
             cake_img: require('../images/best_of_cakes/Pándi meggy torta.jpg'),
             text: "Pándi meggy torta"
 
         },
         {
-            id: 7,
+            id: 9,
             cake_img: require('../images/best_of_cakes/Szatmári szilvatorta.jpg'),
             text: "Szatmári szilvatorta"
 
@@ -1375,7 +1383,7 @@ export default [
             cake_img: require('../images/desserts/IMG_20220611_071123.jpg')
 
         },
-        
+
     ],
     [                                                                               /* MOUSSE */
         {
@@ -1449,7 +1457,7 @@ export default [
             id: 15,
             cake_img: require('../images/mousse_cakes/IMG_20230214_075152.jpg')
         },
-        
+
     ]
 
 
