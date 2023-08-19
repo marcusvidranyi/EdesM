@@ -20,11 +20,11 @@
 
 /* Navbar links hover effect */
 
-.navbar-items > a {
+.navbar-items>a {
     position: relative;
 }
 
-.navbar-items > a::before {
+.navbar-items>a::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -37,7 +37,7 @@
     transition: all .3s ease-in-out;
 }
 
-.navbar-items > a:hover:before{
+.navbar-items>a:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -86,7 +86,7 @@
     width: 220px;
     cursor: pointer;
     transition: all .3s linear;
-    
+
 }
 
 .nav_scrolled {
@@ -103,11 +103,13 @@
     background: rgba(0, 0, 0, 0.6);
     transition: all .3s linear;
 }
-.nav_scrolled > li {
+
+.nav_scrolled>li {
     transform: scale(0.9);
     transition: all .3s linear;
 }
-.navbar > li {
+
+.navbar>li {
     transition: all .3s linear;
 }
 
@@ -161,7 +163,7 @@
         background-image: none;
     }
 
-    .nav_scrolled > li {
+    .nav_scrolled>li {
         transform: none;
     }
 
@@ -174,13 +176,26 @@
         right: 0;
         text-align: center;
     }
-    
-    #edesm_logo, #edesm_logo_scrolled {
+
+    #edesm_logo,
+    #edesm_logo_scrolled {
         width: 300px;
     }
+
     .extra-navbar {
         display: none;
     }
-    
 
+
+}
+
+@media only screen and (max-width: 468px) {
+    #edesm_logo {
+        width: 150px;
+
+    }
+
+    #edesm_logo_scrolled {
+        width: 150px;
+    }
 }

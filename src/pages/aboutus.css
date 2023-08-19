@@ -42,7 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    
+
 
 }
 
@@ -90,6 +90,9 @@
         background-size: contain;
         background-position: bottom;
 
+        height: auto;
+        padding-bottom: 30vh;
+
 
 
 
@@ -106,7 +109,7 @@
     .secondbox {
         width: 60%;
         height: auto;
-        font-size: large;
+        
         /* text-shadow: 1px 1px 2px black, 0 0 1em #fff, 0 0 0.2em #A8894A; */
     }
 }
@@ -117,4 +120,13 @@
         height: 500px;
 
     }
+
+    .secondbox {
+        font-size: 15px;
+
+    }
+
 }
+
+
+

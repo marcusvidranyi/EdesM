@@ -8,7 +8,7 @@ export function ImageSlider({ slides }) {
         return image.slider_image
     });
 
-    const slidePresentationTime = 4000
+    const slidePresentationTime = 7000;
     const [currentSlide, setCurrentSlide] = useState(0)
 
 

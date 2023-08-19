@@ -19,7 +19,7 @@ export function NavBar() {
 
     return (
         <nav className="navbar-parent">
-            <ul className={scrollPosition < 10 ? "navbar" : "nav_scrolled"}>
+            <ul className={/* scrollPosition < 10 ? "navbar" :  */"nav_scrolled"}>
                 <li className="navbar-items">
                     <Link
                         to="main"
