@@ -62,7 +62,7 @@ export default [
     }, */
     {
         id: 16,
-        slider_image: require('../images/image_slider/top-view-christmas-pie-with-hot-chocolate.jpg')
+        slider_image: require('../images/image_slider/anna-peipina-4iNdXNPXsHs-unsplash.jpg')
     },
     {
         id: 17,
