@@ -1,6 +1,6 @@
 export default [
 
-    {
+    /* {
         id: 1,
         slider_image: require('../images/image_slider/magyarorszag_tortaja_2023.jpg')
     },
@@ -8,7 +8,7 @@ export default [
         id: 2,
         slider_image: require('../images/image_slider/magyarorszag_tortaja2_2023.jpg')
     },
-    /* {
+    {
         id: 3,
         slider_image: require('../images/image_slider/20221203003905__MG_2580.jpg')
     },
@@ -59,7 +59,13 @@ export default [
     {
         id: 15,
         slider_image: require('../images/image_slider/ALD_9864.jpg')
+    }, */
+    {
+        id: 16,
+        slider_image: require('../images/image_slider/top-view-christmas-pie-with-hot-chocolate.jpg')
     },
- */
-
+    {
+        id: 17,
+        slider_image: require('../images/image_slider/top-view-christmas-sweets-with-cooking-ustensils.jpg')
+    },
 ]
