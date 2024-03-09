@@ -1,14 +1,14 @@
 export default [
 
-    {
+    /* {
         id: 1,
         slider_image: require('../images/image_slider/magyarorszag_tortaja_2023.jpg')
     },
     {
         id: 2,
         slider_image: require('../images/image_slider/magyarorszag_tortaja2_2023.jpg')
-    },
-    /* {
+    }, */
+    {
         id: 3,
         slider_image: require('../images/image_slider/20221203003905__MG_2580.jpg')
     },
@@ -60,6 +60,6 @@ export default [
         id: 15,
         slider_image: require('../images/image_slider/ALD_9864.jpg')
     },
- */
+
 
 ]

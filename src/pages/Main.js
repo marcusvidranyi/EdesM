@@ -20,17 +20,17 @@ export function Main() {
 
     /* const closeNews = () => {
         setCardActive("side_pop_up")
-    }
- */
+    } */
+
     const goToArticle = () => {
         window.open("https://www.penzcentrum.hu/otthon/20230817/itt-a-friss-lista-ezekben-a-cukraszdakban-lesz-kaphato-magyarorszag-tortaja-2023-ban-1140228")
     }
 
     return (
         <div className="main">
-            {<div className={cardActive} onClick={goToArticle} style={{cursor: "pointer"}}>                               
-                {/* <FontAwesomeIcon icon={faCircleXmark} className="closeNewsButton" onClick={closeNews}/> */}
-            </div>}
+            {/* {<div className={cardActive} onClick={goToArticle} style={{cursor: "pointer"}}>                               
+                {<FontAwesomeIcon icon={faCircleXmark} className="closeNewsButton" onClick={closeNews}/>}
+            </div>} */}
             <div className="slideshow_overlay"></div>
             <div className="main-text-box">
                 <h2 className="main-text-top">TORTÁK</h2>
