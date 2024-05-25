@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import galleryImages from "../../data/galleryImages";
 import { ModalGallery } from "./ModalGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import masterImages from "../../data/masterImages";
 import "./modalGallery.css";
 
 export function ProductModal({ title, open, onClose, /* image, */ propsKey }) {
@@ -37,7 +37,7 @@ export function ProductModal({ title, open, onClose, /* image, */ propsKey }) {
                         <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={onClose} />
                     </div>
                 </div>
-                <ModalGallery modalImages={galleryImages[propsKey]} onClose={onClose} />
+                <ModalGallery modalImages={masterImages[propsKey]} onClose={onClose} />
                 <div className="gallery_modal_close">
                     <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={onClose} />
                 </div>
